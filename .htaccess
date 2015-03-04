@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond $1 !^(index.php|resources) 
+RewriteRule ^(.*)$ /webenolaphp/index.php/$1 [L]
+ErrorDocument 404 /webenolaphp/index.php?error_apache_enola=404
+

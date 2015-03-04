@@ -1,0 +1,31 @@
+[2015-02-22 21:34:35.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 21:34:54.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 21:34:55.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 21:36:40.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 21:36:41.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 21:37:52.000000 ::1  - Unknown ] Division by zero
+----------\n[2015-02-22 21:38:15.000000 ::1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
+----------\n[2015-02-22 22:13:25.000000 ::1  - Unknown ] Division by zero
+----------\n[2015-02-22 22:17:42.000000 ::1  - Unknown ] Division by zero
+----------\n[2015-03-04 18:55:53.000000 127.0.0.1  - Unknown ] require_once(C:\wamp\www\webenolaphp\aplication/libraries/ServiciosUI-10.0-Eval/servicioui.php.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:03.000000 127.0.0.1  - Unknown ] require_once(C:\wamp\www\webenolaphp\aplication/libraries/ServiciosUI-10.0-Eval/servicioui.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fopen(C:\wamp\www\webenolaphp\aplication//source/view/components/components.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fclose() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fopen(C:\wamp\www\webenolaphp\aplication//source/view/components/components.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fwrite() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fclose() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fopen(C:\wamp\www\webenolaphp\aplication//source/view/components/components.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fwrite() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fclose() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fopen(C:\wamp\www\webenolaphp\aplication//source/view/components/components.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fwrite() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:56:10.000000 127.0.0.1  - Unknown ] fclose() expects parameter 1 to be resource, boolean given
+----------\n[2015-03-04 18:58:45.000000 127.0.0.1  - The requested page could not be found but may be available again in the future
+ ] error_http
+----------\n[2015-03-04 18:58:45.000000 127.0.0.1  - The requested page could not be found but may be available again in the future
+ ] general_error
+----------\n[2015-03-04 18:58:47.000000 127.0.0.1  - The requested page could not be found but may be available again in the future
+ ] error_http
+----------\n[2015-03-04 18:58:47.000000 127.0.0.1  - The requested page could not be found but may be available again in the future
+ ] general_error
+----------\n
