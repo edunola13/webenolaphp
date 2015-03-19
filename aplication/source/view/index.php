@@ -7,15 +7,11 @@
 	<title>ENOLA - Framework PHP</title>
 		
 	<!-- BOOTSTRAP-->
-        <link type="text/css" href="<?php echo real_base();?>resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="<?php echo real_base();?>resources/css/bootstrap.css" rel="stylesheet" media="screen" />
+	<link type="text/css" href="<?php echo real_base();?>resources/css/style.css" rel="stylesheet" media="screen" />
 
 	<link type="text/css" href="<?php echo real_base();?>resources/css/animate.css" rel="stylesheet" media="screen" />
-	
-	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type='text/javascript' src='<?php echo real_base();?>resources/js/bootstrap.min.js'></script>
-	<script type='text/javascript' src='<?php echo real_base();?>resources/js/wow.js'></script>
-	
+
 	<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
 	
 	<link rel="shortcut icon" href="<?php echo real_base();?>resources/images/favicon.ico" type="image/x-icon">
@@ -139,6 +135,10 @@
 	</div>
     </footer>
 	
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type='text/javascript' src='<?php echo real_base();?>resources/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='<?php echo real_base();?>resources/js/wow.js'></script>
     <script>
 	$(function () {
             $('[data-toggle="tooltip"]').tooltip()
