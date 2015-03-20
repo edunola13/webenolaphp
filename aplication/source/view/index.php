@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ENOLA - Framework PHP</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENOLA - Framework PHP</title>
 		
-	<!-- BOOTSTRAP-->
-    <link type="text/css" href="<?php echo real_base();?>resources/css/bootstrap.css" rel="stylesheet" media="screen" />
-	<link type="text/css" href="<?php echo real_base();?>resources/css/style.css" rel="stylesheet" media="screen" />
+    <!-- BOOTSTRAP-->
+    <link type="text/css" href="<?php echo base();?>resources/css/bootstrap.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="<?php echo base();?>resources/css/style.css" rel="stylesheet" media="screen" />
 
-	<link type="text/css" href="<?php echo real_base();?>resources/css/animate.css" rel="stylesheet" media="screen" />
+    <link type="text/css" href="<?php echo base();?>resources/css/animate.css" rel="stylesheet" media="screen" />
 
-	<link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
 	
-	<link rel="shortcut icon" href="<?php echo real_base();?>resources/images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="<?php echo real_base();?>resources/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo base();?>resources/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo base();?>resources/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -29,7 +29,7 @@
 		<span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo real_base();?>">
-                <img alt="Logo-color" src="<?php echo real_base();?>resources/images/logo-color.png">
+                <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -52,13 +52,12 @@
 	
     <div class="jumbotron">
         <div class="container">
-            <img src="<?php echo real_base();?>resources/images/logo-negro.png" class="img-responsive animated bounce" alt="Logo-negro" style="margin-left:auto;margin-right:auto;">
+            <img src="<?php echo base();?>resources/images/logo-negro.png" class="img-responsive animated bounce" alt="Logo-negro" style="margin-left:auto;margin-right:auto;">
             <h1>ENOLA - Framework PHP</h1>
             <h1><small>Simple. Liviano. Rápido.</small></h1>
-            <h2>Si sabe PHP, sabe usar Enola.</h2>
             <br>
-            <a href="" data-toggle="tooltip" data-placement="top" title="Descargar">
-                <img class="img-circle" src="<?php echo real_base();?>resources/images/download.png" alt="Introducción" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
+            <a href="" data-toggle="tooltip" data-placement="top" title="Descargar v1.0">
+                <img class="img-circle" src="<?php echo base();?>resources/images/download.png" alt="Introducción" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
             </a>
 	</div>
     </div>
@@ -67,31 +66,34 @@
 	<div class="row">
             <div class="col-md-4 animated fadeInUp wow">
                 <h2>Qué es</h2>
-		<p>Enola PHP es un Framework PHP que se caracteriza por su rápida configuración y fácil utilización.<br>
-		Presta todas las herramientas necesarias para que usted pueda realizar desde una aplicación simple a una muy compleja de una manera rápida, sencilla y reutilizando código.<br>
-		Algunas de las herramientas con las que cuenta el framework son:<br>
-		// Filtros<br>
-		// Controladores<br>
-		// Simples Archivos de Configuración<br>
-		// Fácil Utilización de Librerías<br>
-		// Conexión a la BD</p>
+		<p>EnolaPHP es un Framework PHP principalmente para el desarrollo de aplicaciones web el cual es 
+                    muy liviano, simple de instalar y configurar, muy rapido y facil de aprender. El mismo se encuentra
+                    separado en módulos los cuales ayudan a la reutilizacion de codigo y aceleran el proceso de 
+                    desarrollo y evolución del framework.<br>
+                    EnolaPHP provee varias características que le ayudarán a mejorar su producción en el desarrollo 
+                    de aplicaciones web.
+                </p>
             </div>
             <div class="col-md-4 animated fadeInUp wow">
 		<h2>Por qué</h2>
-		<p>// Es muy liviano a diferencia de otros Frameworks PHP.<br>
-		// Al ser liviano es muy rápido.<br>
+		<p>// Es muy liviano y muy rápido.<br>
 		// Configuración rápida y sencilla.<br>
 		// Modulo de ruteo dinámico.<br>
 		// Modulo de filtros extremadamente útil.<br>
-		// Componente modularizable para todas las paginas.<br>
-		// Fácil Integración con distintos frameworks o librerías PHP.</p>
+		// Modulo de componentes para modularizar comportmaiento repetido.<br>
+		// Fácil Integración con distintos frameworks o librerías PHP.<br>
+                // Conexion a la BD - Simple DAO/ActiveRecord.<br>
+                // Tags - UI Services
+                </p>
             </div>
             <div class="col-md-4 animated fadeInUp wow">
-		<h2>J2EE en PHP</h2>
-		<p>La idea principal de este framework es tener una estructura parecida a la de J2EE en PHP para programar en ambos lenguajes con una misma mentalidad.<br>
-		Cuando uno realiza una aplicación web en Java utiliza filtros, servlets, archivos de configuración (o anotaciones). También suele utilizar frameworks como struts para MVC. Nosotros intentamos eso, para eso proveemos filtros, controladores (que responde a métodos HTTP como los servlets), simples archivos de configuración.<br>
-		También estamos en el desarrollo de un framework MVC que funciones arriba de nuestros controladores.<br>
-		Además de otras herramientas que proveen todos los frameworks PHP, creo que esto explica nuestra idea principal de lo que es Enola Framework PHP.</p>
+		<h2>Por qué nació</h2>
+		<p>Contar en PHP con un framework que nos provea de una arquitectura que nos ayude a programar aplicaciones 
+                    web con características similares a las que provee J2EE y sobre esta arquitectura poder agregar todas las
+                    librerías, framework o dependencias que el programador necesite.<br>
+                    Las características que provee J2EE que se proveen en EnolaPHP son: simples archivos de configuración,
+                    controladores y filtros que mapean solicitudes HTTP, simple inclusión de librerías, etc.
+                </p>
             </div>
 	</div>
 	
@@ -116,14 +118,14 @@
 		<img class="img-circle" src="<?php echo real_base();?>resources/images/docs.png" alt="Introducción" style="width: 140px; height: 140px;">
                 </a>
 		<h2>Docs</h2>
-		<p>Ver toda la documentación, incluyendo la introducción a las distintas versiones.</p>
+		<p>Una mirada mas profunda al framework. Como funciona internamente Enola PHP.</p>
             </div><!-- /.col-md-4 -->
         </div><!-- /.row -->
     </div>
 	
     <div class="jumbotron jumbotron-small">
         <div class="container">
-            <a href="" data-toggle="tooltip" data-placement="top" title="Descargar">
+            <a href="" data-toggle="tooltip" data-placement="top" title="Descargar v1.0">
             <img class="img-circle" src="<?php echo real_base();?>resources/images/download.png" alt="Introducción" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
             </a>
 	</div>
@@ -131,14 +133,16 @@
 	
     <footer class="footer">
         <div class="container">
-            <p class="text-muted">© Copyright 2014 | ENOLA PHP. Desarrolado por <a href="http://www.edunola.com.ar" target="blank">edunola.com.ar</a> y <a href="http://www.webesnola.appspot.com" target="blank">webesnola.appspot.com</a></p>
+            <p class="text-muted">Code and Maintenance via <a href="https://github.com/edunola13/enolaphp" target="blank">GitHub</a></p>
+            <p class="text-muted">Currently v1.0 - Code licensed under <a href="https://github.com/edunola13/enolaphp/blob/master/LICENSE" target="blank">MIT</a></p>
+            <p class="text-muted">© Copyright 2014 | ENOLA PHP. Developed By <a href="http://www.edunola.com.ar" target="blank">edunola.com.ar</a></p>
 	</div>
     </footer>
 	
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type='text/javascript' src='<?php echo real_base();?>resources/js/bootstrap.min.js'></script>
-    <script type='text/javascript' src='<?php echo real_base();?>resources/js/wow.js'></script>
+    <script type='text/javascript' src='<?php echo base();?>resources/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='<?php echo base();?>resources/js/wow.js'></script>
     <script>
 	$(function () {
             $('[data-toggle="tooltip"]').tooltip()

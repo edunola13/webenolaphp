@@ -2,7 +2,7 @@ body{
 	#202020
 }
 
-hr{ border-top: 1px solid #ff8600;}
+hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 
 .jumbotron{background-color: #ff8600;}
 
@@ -10,6 +10,4 @@ hr{ border-top: 1px solid #ff8600;}
 
 .form-control::-webkit-input-placeholder { color: black;}
 
-
-
-
+.text-muted{color: silver;}
