@@ -5,4 +5,49 @@
 ----------\n[2015-03-26 15:38:59.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-26 15:38:59.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-26 15:38:59.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 18:56:38.000000 127.0.0.1  - Error Fatal - Parse - Strict ] syntax error, unexpected T_IF, expecting ',' or ';'
+----------\n[2015-03-26 18:56:49.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:56:51.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:56:51.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:57:23.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:57:24.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:58:19.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:58:53.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:58:54.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 18:59:50.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 19:00:44.000000 127.0.0.1  - The HTTP method  is not supported ] general_error
+----------\n[2015-03-26 19:02:17.000000 127.0.0.1  - The HTTP method index is not supported ] general_error
+----------\n[2015-03-26 19:02:27.000000 127.0.0.1  - The HTTP method index is not supported ] general_error
+----------\n[2015-03-26 19:02:27.000000 127.0.0.1  - The HTTP method index is not supported ] general_error
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\wamp\www\webenolaphp\aplication\source\view\contact.php on line 70 and defined
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined variable: action
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:27.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\wamp\www\webenolaphp\aplication\source\view\contact.php on line 70 and defined
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined variable: action
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:35.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\wamp\www\webenolaphp\aplication\source\view\contact.php on line 70 and defined
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined variable: action
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:54.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:03:56.000000 127.0.0.1  - The HTTP method contacts is not supported ] general_error
+----------\n[2015-03-26 19:09:09.000000 127.0.0.1  - Error Fatal - Parse - Strict ] Function name must be a string
+----------\n[2015-03-26 19:09:29.000000 127.0.0.1  - Error Fatal - Parse - Strict ] Function name must be a string
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\wamp\www\webenolaphp\aplication\source\view\contact.php on line 70 and defined
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined variable: action
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-26 19:09:49.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n

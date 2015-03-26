@@ -280,8 +280,8 @@
                 if(!$encontrado){
                     if($partes_url[$i] == '-' || $partes_url[$i] == '*'){
                         $encontrado= TRUE;
-                        if($partes_url[$i] == '-'){
-                            $method= $partes_uri_actual[$i];                            
+                        if($partes_url[$i] == '-' && $partes_uri_actual[$i] != ''){
+                            $method= $partes_uri_actual[$i];
                             continue;
                         }
                     }else{

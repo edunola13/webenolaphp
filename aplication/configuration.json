@@ -7,7 +7,10 @@
     "charset": "UTF-8",
       
     "controllers": {
-        "index": {"class": "Index", "url": "/"}
+        "index": {"class": "Index", "url": ""},
+        "download": {"class": "Index", "url": "download"},
+        "contribute": {"class": "Index", "url": "contribute"},
+        "contact": {"class": "Index", "url": "contact"}
     },
 
     "filters": {
