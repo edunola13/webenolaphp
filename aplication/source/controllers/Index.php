@@ -17,7 +17,7 @@ class Index extends En_Controller{
             $param= explode("/", URIAPP);
             $last_param= $param[count($param)-1];
         }
-        $this->load_view($last_param);
+        $this->load_view($last_param, array('section' => $last_param));
     }
 
 }
