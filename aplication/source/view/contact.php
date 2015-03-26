@@ -58,15 +58,41 @@
 
     <div class="container">
 	<div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <?php Tags::form('form-contact', 'POST', '', NULL, 'Contact Us'); ?>
+            <legend>Contact Us</legend>
+            <div class="col-md-3">
+                <?php Tags::paragraph('left');?>
+                    Si tiene cualquier tipo de consulta, ya se comercial, de interes personal u otra, por favor complete el siguiente
+                    formulario para contactarnos con usted y asi poder aclarar sus dudas.<br/><br/>
+                    Saludos y Gracias.
+                <?php Tags::end_paragraph();?>
+            </div>
+            <div class="col-md-9">
+                <?php Tags::form('form-contact', 'POST'); ?>
+                    <?php Tags::alert_message("danger", $this->message);?>            
                 
+                    <?php Tags::input("Nombre", 'nombre',"nombre", "text", "Nombre", $this->email['nombre'], (isset($this->errores['nombre']) ? $this->errores['nombre'] : NULL), 'error');?> 
+
+                    <?php Tags::input("Email", 'email',"email", "email", "Email", $this->email['email'], (isset($this->errores['email']) ? $this->errores['email'] : NULL), 'error');?> 
+
+                    <?php if(isset($this->errores['asunto'])){
+                        Tags::alert_message("warning", $this->errores["asunto"]); }?>
+
+                    <?php Tags::select("Asunto", "asunto","asunto", $this->email['asunto'], NULL,FALSE,(isset($this->errores['asunto']) ? $this->errores['asunto'] : NULL),'error'); ?>
+                        <?php Tags::select_option("General", "General"); ?>
+                        <?php Tags::select_option("Enola PHP", "Enola PHP"); ?>
+                        <?php Tags::select_option("UI Services", "UI Services"); ?>
+                        <?php Tags::select_option("Games", "Games"); ?>
+                    <?php Tags::end_select(); ?>
+
+                    <?php Tags::textarea("Mensaje", "mensaje","mensaje", 10, "Mensaje a Enviar", $this->email['mensaje'],(isset($this->errores['mensaje']) ? $this->errores['mensaje'] : NULL),'error');?>
+
+                    <?php Tags::botonera(); ?>            
+                    <?php Tags::button('Enviar', '', 'submit', NULL, 'default');?>
+                    <?php Tags::end_botonera(); ?>
                 <?php Tags::end_form();?>
             </div>
 	</div>        
     </div>
-	
-	
 	
     <hr class="divider"></hr>
 	
@@ -80,13 +106,5 @@
 	
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type='text/javascript' src='<?php echo base();?>resources/js/bootstrap.min.js'></script>
-    <script type='text/javascript' src='<?php echo base();?>resources/js/wow.js'></script>
-    <script>
-	$(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-	})
-	new WOW().init();
-    </script>
-	
+    <script type='text/javascript' src='<?php echo base();?>resources/js/bootstrap.min.js'></script>	
 </body>

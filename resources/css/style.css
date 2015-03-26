@@ -1,5 +1,5 @@
 body{
-	#202020
+    background-color: #202020
 }
 
 hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
@@ -11,3 +11,15 @@ hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 .form-control::-webkit-input-placeholder { color: black;}
 
 .text-muted{color: silver;}
+
+legend{color: #ff8600; border-bottom: 1px solid #ff8600;}
+
+.btn-default {background-color: #ff8600; border-color: #ff8600;}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {background-color: #ff8600;}
+
+.btn-warning {background-color: #ff8600; border-color: #ff8600;}
