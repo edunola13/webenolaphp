@@ -11,7 +11,7 @@
         "download": {"class": "Index", "url": "download"},
         "contribute": {"class": "Index", "url": "contribute"},
         "contact": {"class": "Index", "url": "contact"},
-        "documentation": {"class": "Documentation", "url": "documentation/-"}
+        "documentation": {"class": "Documentation", "url": "documentation"}
     },
 
     "filters": {

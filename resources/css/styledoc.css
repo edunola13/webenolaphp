@@ -1,0 +1,65 @@
+.body-doc {background-color: white; }
+
+.nav-doc{
+    min-height: 100%;
+    position: absolute;
+    width: 300px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav-title{
+    background-color: black;
+}
+
+.nav-pills > li{
+    background-color: papayawhip;
+}
+
+.nav-pills > li > a {
+    color: black;
+    padding: 5px 8px;
+    border-radius: 0px;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: black;
+  background-color: white;
+  font-weight: bold;
+}
+
+.nav-desplegable > li{
+    color: black;
+    padding-left: 30px;
+    background-color: #9d9d9d;
+}
+
+.nav-desplegable > li:hover{
+    background-color: silver;
+}
+
+.nav-desplegable > li > a{
+    position: relative;
+  display: block;
+    color: black;
+}
+
+.nav-pills > .nav-desplegable > li.active{
+    background-color:silver;
+}
+
+.nav-pills > .nav-desplegable > li.active > a,
+.nav-pills > .nav-desplegable > li.active > a:hover,
+.nav-pills > .nav-desplegable > li.active > a:focus {
+  color: black;
+  font-weight: bold;
+}
+
+.documentation{
+    margin-left: 300px;
+    background-color: white;
+    color: black;
+    min-height: 100%;
+}

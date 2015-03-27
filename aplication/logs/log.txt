@@ -99,4 +99,5 @@
 ----------\n[2015-03-26 20:17:55.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-26 20:17:55.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-26 20:17:55.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:44:57.000000 127.0.0.1  - The HTTP method index is not supported ] general_error
 ----------\n
