@@ -74,14 +74,14 @@
     function i18n($file, $locale = NULL){
         $archivo_cargado= NULL;
         if($locale != NULL){
-            if(file_exists(PATHAPP . 'source/content/' . $file . "_$locale" . '.ini')){
-                $archivo_cargado= load_application_file('source/content/' . $file . "_$locale" . '.ini');
+            if(file_exists(PATHAPP . 'source/content/' . $file . "_$locale" . '.txt')){
+                $archivo_cargado= load_application_file('source/content/' . $file . "_$locale" . '.txt');
                 $archivo_cargado= parse_properties($archivo_cargado);
                 $GLOBALS['i18n_locale']= $locale;
             }
         }
         if($archivo_cargado == NULL){
-            $archivo_cargado= load_application_file('source/content/' . $file . '.ini');
+            $archivo_cargado= load_application_file('source/content/' . $file . '.txt');
             $archivo_cargado= parse_properties($archivo_cargado);
             $GLOBALS['i18n_locale']= 'Default';
         }
@@ -105,8 +105,8 @@
      * @param type $clave
      * @return type
      */
-    function i18n_value($val_key, $params = NULL){
-        if(isset($GLOBALS['i18n_language_file'])){
+    function i18n_value($val_key, $params = NULL){        
+        if(isset($GLOBALS['i18n_language_file'])){            
             if(isset($GLOBALS['i18n_language_file'][$val_key])){
                 $mensaje= $GLOBALS['i18n_language_file'][$val_key];
                 

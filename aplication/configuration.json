@@ -7,7 +7,11 @@
     "charset": "UTF-8",
       
     "controllers": {
-        "index": {"class": "Index", "url": "/"}
+        "index": {"class": "Index", "url": ""},
+        "download": {"class": "Index", "url": "download"},
+        "contribute": {"class": "Index", "url": "contribute"},
+        "contact": {"class": "Index", "url": "contact"},
+        "documentation": {"class": "Documentation", "url": "documentation"}
     },
 
     "filters": {
@@ -17,8 +21,8 @@
     },
             
     "i18n": {
-        "default": "es",
-        "locales": "en,fr,me"
+        "default": "en",
+        "locales": "es"
     },
        
     "url-components": "enola-components",
