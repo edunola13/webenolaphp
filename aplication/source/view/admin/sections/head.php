@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 		
 <!-- BOOTSTRAP-->
-<link type="text/css" href="<?php echo base();?>resources/css/bootstrap.css" rel="stylesheet" media="screen" />
+<link type="text/css" href="<?php echo base();?>resources/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <style>
     body{background-color: #ffffff; color: #333333}
 </style>

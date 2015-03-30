@@ -8,8 +8,23 @@ class DocDao {
         $this->connection= new En_DataBase();
     }
     
-    public function docs($limit = 0, $offset = 10){        
-        return $this->connection->getFromWhereInObjects('Doc','documentacion', NULL, array(), 'titulo asc', $limit, $offset);
+    public function docs($search = "", $limit = 0, $offset = 0){
+        $this->connection->from('documentacion');
+        $this->connection->where_like("titulo", $search);
+        $this->connection->or_where_like("version", $search);
+        $this->connection->order('titulo asc');
+        $this->connection->limit($limit, $offset);
+        return $this->connection->getInObjects('Doc');
+    }
+    
+    public function cantDocs($search = ""){
+        $this->connection->select("count(*)");
+        $this->connection->from("documentacion");
+        $this->connection->where_like("titulo", $search);
+        $this->connection->or_where_like("version", $search);
+        $res= $this->connection->get();
+        $cant= $res->fetch();
+        return $cant[0];
     }
     
     public function docId($id){
@@ -22,17 +37,19 @@ class DocDao {
         return $this->connection->firstResultInObject($res, 'Doc');
     }
     
-    public function addDoc($doc){        
-        $this->connection->insertObject('documentacion', $doc);
+    public function addDoc($doc){
+        $doc->fechaActualizacion= date('Y-m-d');
+        return $this->connection->insertObject('documentacion', $doc);
     }
     
     public function updateDoc($doc){
-        $this->connection->updateObject('documentacion', $doc, 'id=:id', array('id' => $doc->id));
+        $doc->fechaActualizacion= date('Y-m-d');
+        return $this->connection->updateObject('documentacion', $doc, 'id=:id', array('id' => $doc->id));
     }
     
     public function deleteDoc($id){
         $this->connection->where('id=:id', array('id' => $id));
-        $this->connection->delete('documentacion');
+        return $this->connection->delete('documentacion');
     }
 }
 

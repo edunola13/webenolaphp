@@ -337,7 +337,7 @@ class En_DataBase extends Enola{
      * @param string $class
      * @return PDOStatement
      */
-    public function getInObject($class){
+    public function getInObjects($class){
         $res= $this->get();
         if($res !== FALSE){
             return $this->resultsInObjects($res, $class);
@@ -479,6 +479,7 @@ class En_DataBase extends Enola{
             if($error[0] == '00000'){
                 $res= TRUE;
             }else{
+                $res= FALSE;
                 $this->catchError($error);
             }
         } catch (PDOException $e) {

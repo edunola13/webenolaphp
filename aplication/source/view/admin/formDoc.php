@@ -10,37 +10,34 @@
 
         <section class="row list">
             <?php Tags::title("Administracion de Documentacion - Form"); ?>
+            <?php Tags::link("link-tabla", real_base() . "adminDoc", "<< Volver", TRUE, "primary"); ?>
             <article class="col col-md-12">
                 <?php Tags::form('form-doc',"POST", '' , '', ""); ?>
-                    <?php Tags::alert_message("info", $this->mensaje);?> 
-                    <?php Tags::alert_message("danger", $this->mensaje_error);?> 
+                    <?php Tags::alert_message($tipoMensaje, $mensaje);?>
                 
                     <input name="id" type="hidden" value="<?php echo $doc->id ?>"/>
                     
-                    <?php Tags::input("Titulo", "titulo", "titulo", "text", "Titulo del Documento", $doc->titulo, (isset($this->errores['nombre']) ? $this->errores['nombre'] : NULL), 'error'); ?>
+                    <?php Tags::input("Titulo", "titulo", "titulo", "text", "Titulo del Documento", $doc->titulo, (isset($this->errors['titulo']) ? $this->errors['titulo'] : NULL), 'error'); ?>
                     
-                    <?php Tags::input("Version", "version", "version", "text")
+                    <?php Tags::input("Version", "version", "version", "text", "Version del Framework", $doc->version, (isset($this->errors['version']) ? $this->errors['version'] : NULL), 'error') ?>
                     
-                    <?php if(isset($this->errores['descripcion'])){ 
-                    Tags::alert_message("warning", $this->errores["descripcion"]); }?>
-                    <?php Tags::textarea("Descripcion", "descripcion","descripcion", 5, "Descripcion del Post", $this->post->descripcion); ?>
-                    <?php if(isset($this->errores['contenido'])){ 
-                    Tags::alert_message("warning", $this->errores["contenido"]); }?>
-                    <textarea name="contenido" id="contenido" placeholder="Descripcion del Post" rows="10" cols="50" ><?php echo $this->post->contenido; ?></textarea>
+                    <?php Tags::select("Locale", "locale", "locale", $doc->locale)?>
+                        <?php Tags::select_option("Español", "es");?>
+                        <?php Tags::select_option("Ingles", "en");?>
+                    <?php Tags::end_select()?>
+                    
+                    <?php Tags::input("Nombre URL", "nombreUrl", "nombreUrl", "text", "Nombre de la URL", $doc->nombreUrl, (isset($this->errors['nombreUrl']) ? $this->errors['nombreUrl'] : NULL), 'error')?>
+                    
+                    <?php Tags::boolean_checkbox("Habilitado", "habilitado","habilitado", $doc->habilitado); ?>
+                    
+                    <?php if(isset($this->errors['contenido'])){ 
+                    Tags::alert_message("warning", $this->errors["contenido"]); }?>
+                    <textarea name="contenido" id="contenido" placeholder="Descripcion de la Documentación" rows="10" cols="50" ><?php echo $doc->contenido; ?></textarea>
                     <script>
                         CKEDITOR.replace( 'contenido' );
-                    </script>
-                    <?php Tags::boolean_checkbox("Habilitado", "habilitado","habilitado", $this->post->habilitado); ?>
-                    <?php Tags::select("Posts Relacionados", "relacion","relacion[]", $this->relaciones, NULL,TRUE); ?>
-                        <?php foreach ($this->posts as $pos) { ?>
-                            <?php Tags::select_option($pos->titulo, $pos->id); ?>
-                        <?php } ?>
-                    <?php Tags::end_select(); ?>
-                    <?php Tags::select("Tags", "tags","tags[]", $this->tags_rel, NULL,TRUE); ?>
-                        <?php foreach ($this->tags as $tag) { ?>
-                            <?php Tags::select_option($tag->nombre, $tag->id); ?>
-                        <?php } ?>
-                    <?php Tags::end_select(); ?>
+                    </script>                    
+                    
+                    <br/>
                     
                     <?php Tags::botonera(); ?>
                         <?php Tags::button('Modificar', '', 'submit');?>

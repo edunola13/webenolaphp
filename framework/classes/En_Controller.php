@@ -7,7 +7,7 @@ class En_Controller extends Enola implements Controller{
     protected $request;
     protected $uri_params;
     protected $view_folder;
-    //errores
+    //errors
     public $errors;    
 
     function __construct(){
@@ -106,7 +106,7 @@ class En_Controller extends Enola implements Controller{
         }
         if(! $validacion->validate()){
             //Consigo los errores y retorno FALSE
-            $this->errores= $validacion->error_messages();
+            $this->errors= $validacion->error_messages();
             return FALSE;
         }
         else{
