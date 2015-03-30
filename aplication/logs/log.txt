@@ -100,4 +100,173 @@
 ----------\n[2015-03-26 20:17:55.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-26 20:17:55.000000 127.0.0.1  - Unknown ] Undefined property: Index::$email
 ----------\n[2015-03-27 18:44:57.000000 127.0.0.1  - The HTTP method index is not supported ] general_error
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\xampp\htdocs\webenolaphp\aplication\source\view\contact.php on line 28 and defined
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined variable: action
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:55:41.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\xampp\htdocs\webenolaphp\aplication\source\view\contact.php on line 28 and defined
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined variable: action
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:06.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\xampp\htdocs\webenolaphp\aplication\source\view\contact.php on line 28 and defined
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined variable: action
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 18:59:15.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\xampp\htdocs\webenolaphp\aplication\source\view\contact.php on line 28 and defined
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined variable: action
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 19:02:17.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: preState
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: preHref
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: preLabel
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: nextState
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: nextHref
+----------\n[2015-03-27 19:18:58.000000 ::1  - Unknown ] Undefined variable: nextLabel
+----------\n[2015-03-27 19:29:22.000000 ::1  - Unknown ] Undefined variable: dao
+----------\n[2015-03-27 19:29:31.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type PDOStatement as array
+----------\n[2015-03-27 19:29:52.000000 ::1  - Unknown ] Undefined property: PDOStatement::$contenido
+----------\n[2015-03-27 19:32:51.000000 ::1  - Unknown ] Undefined index: contenido
+----------\n[2015-03-27 19:33:19.000000 ::1  - Unknown ] Undefined index: contenido
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Missing argument 3 for Tags::form(), called in C:\xampp\htdocs\webenolaphp\aplication\source\view\contact.php on line 28 and defined
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined variable: action
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined property: Index::$message
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-28 13:55:22.000000 ::1  - Unknown ] Undefined property: Index::$email
+----------\n[2015-03-28 17:32:10.000000 ::1  - Unknown ] A non well formed numeric value encountered
+----------\n[2015-03-28 17:32:10.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'appedunola.documentacion' doesn't exist' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:388
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(16): En_DataBase->getFromWhere('documentacion', 'nombreUrl=:nomb...', Array)
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\Documentation.php(11): DocDao->doc('prueba')
+#2 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(132): Documentation->doGet()
+#3 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#4 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#5 {main}
+  thrown
+----------\n[2015-03-28 17:32:34.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function fetchObject() on a non-object
+----------\n[2015-03-28 17:50:41.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function fetchObject() on a non-object
+----------\n[2015-03-28 17:51:11.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function fetchObject() on a non-object
+----------\n[2015-03-28 17:51:45.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function fetchObject() on a non-object
+----------\n[2015-03-28 17:52:10.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function fetchObject() on a non-object
+----------\n[2015-03-28 17:53:59.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type Doc as array
+----------\n[2015-03-28 17:54:58.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type Doc as array
+----------\n[2015-03-28 17:54:59.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type Doc as array
+----------\n[2015-03-28 17:55:18.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type Doc as array
+----------\n[2015-03-28 17:55:19.000000 ::1  - Error Fatal - Parse - Strict ] Cannot use object of type Doc as array
+----------\n[2015-03-28 17:56:00.000000 ::1  - Unknown ] Use of undefined constant contenido - assumed 'contenido'
+----------\n[2015-03-28 17:56:00.000000 ::1  - Unknown ] Object of class Doc could not be converted to int
+----------\n[2015-03-28 23:24:39.000000 ::1  - The controller AdminDoc dont exists ] general_error
+----------\n[2015-03-28 23:24:39.000000 ::1  - Error Fatal - Parse - Strict ] Call to a member function doGet() on a non-object
+----------\n[2015-03-28 23:25:12.000000 ::1  - Unknown ] Argument 1 passed to En_DataBase::getFromWhereInObjects() must be an instance of string, string given, called in C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php on line 12 and defined
+----------\n[2015-03-28 23:25:12.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(406): En_DataBase->get('documentacion', NULL, Array, 'titulo asc', 0, 0)
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getFromWhereInObjects('Doc', 'documentacion', NULL, Array, 'titulo asc', 0, 0)
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:26:11.000000 ::1  - Unknown ] Argument 1 passed to En_DataBase::getFromWhereInObjects() must be an instance of string, string given, called in C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php on line 12 and defined
+----------\n[2015-03-28 23:26:11.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(406): En_DataBase->get('documentacion', NULL, Array, 'titulo asc', 0, 10)
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getFromWhereInObjects('Doc', 'documentacion', NULL, Array, 'titulo asc', 0, 10)
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:26:12.000000 ::1  - Unknown ] Argument 1 passed to En_DataBase::getFromWhereInObjects() must be an instance of string, string given, called in C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php on line 12 and defined
+----------\n[2015-03-28 23:26:12.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(406): En_DataBase->get('documentacion', NULL, Array, 'titulo asc', 0, 10)
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getFromWhereInObjects('Doc', 'documentacion', NULL, Array, 'titulo asc', 0, 10)
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:27:20.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(406): En_DataBase->get('documentacion', NULL, Array, 'titulo asc', 0, 10)
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getFromWhereInObjects('Doc', 'documentacion', NULL, Array, 'titulo asc', 0, 10)
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:28:04.000000 ::1  - Unknown ] include(tabla_docs) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-28 23:28:04.000000 ::1  - Unknown ] include() [<a href='function.include'>function.include</a>]: Failed opening 'tabla_docs' for inclusion (include_path='.;\xampp\php\PEAR')
+----------\n[2015-03-28 23:29:29.000000 ::1  - Unknown ] Argument 1 passed to En_DataBase::getInObject() must be an instance of string, string given, called in C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php on line 12 and defined
+----------\n[2015-03-28 23:29:29.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(341): En_DataBase->get()
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getInObject('Doc')
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:29:42.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(341): En_DataBase->get()
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getInObject('Doc')
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:29:45.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(341): En_DataBase->get()
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(12): En_DataBase->getInObject('Doc')
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(14): DocDao->docs()
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(125): AdminDoc->index()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
+----------\n[2015-03-28 23:31:18.000000 ::1  - Unknown ] Invalid argument supplied for foreach()
+----------\n[2015-03-29 20:10:59.000000 ::1  - Unknown ] require_once(sections_post/tabla_docs.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory
+----------\n[2015-03-29 20:37:53.000000 ::1  - Unknown ] Undefined property: En_HttpRequest::$method
+----------\n[2015-03-29 20:37:53.000000 ::1  - Unknown ] Undefined property: AdminDoc::$doc
+----------\n[2015-03-29 20:37:53.000000 ::1  - Error Fatal - Parse - Strict ] Class 'Validation' not found
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$mensaje
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$mensaje_error
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$post
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Trying to get property of non-object
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$post
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Trying to get property of non-object
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$post
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Trying to get property of non-object
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$post
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Trying to get property of non-object
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$post
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Trying to get property of non-object
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$relaciones
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$posts
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Invalid argument supplied for foreach()
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$tags_rel
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Undefined property: AdminDoc::$tags
+----------\n[2015-03-29 20:38:31.000000 ::1  - Unknown ] Invalid argument supplied for foreach()
 ----------\n

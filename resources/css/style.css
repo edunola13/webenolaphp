@@ -31,7 +31,7 @@ hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
     color:white;
-    background-color: black;
+    background-color: #202020;
 }
 
 .jumbotron{background-color: #ff8600;}

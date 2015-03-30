@@ -41,18 +41,26 @@
         </div>
     </div>
     <div class="documentation">
-                asdadadad
-                sd
-                asd
-                ad
-                asd
-                as
-                asd
-                sad
-                asd
-                <br/>
-                asds
-                <br/>
+        <?php Tags::breadcrumb(); ?>
+            <?php Tags::nav_item("Documentacion", base_locale() . 'documentation');?>
+            <?php Tags::nav_item("Introduccion", base_locale() . 'documentation');?>
+            <?php Tags::nav_item("Descargar Enola PHP", base_locale() . 'documentation', 'active');?>
+        <?php Tags::end_breadcrumb(); ?>
+        
+        <div class="container-doc">
+            <h3>Introduccion</h3>
+            <?php echo $doc->contenido; ?>
+            
+            <?php Tags::paginador_simple('disabled', '', 'Anterior', 'active', '', 'Siguiente'); ?>
+            
+            <hr class="divider"></hr>
+
+            <footer class="footer">
+                <p class="text-muted">Code and Maintenance via <a href="https://github.com/edunola13/enolaphp" target="blank">GitHub</a></p>
+                <p class="text-muted">Currently v1.0 - Code licensed under <a href="https://github.com/edunola13/enolaphp/blob/master/LICENSE" target="blank">MIT</a></p>
+                <p class="text-muted">© Copyright 2014 | ENOLA PHP. Developed By <a href="http://www.edunola.com.ar" target="blank">edunola.com.ar</a></p>
+            </footer>
+        </div>
     </div>
     
     <!-- JS -->

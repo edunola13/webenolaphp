@@ -1,10 +1,12 @@
-.body-doc {background-color: white; }
+.body-doc {background-color: black;}
 
 .nav-doc{
-    min-height: 100%;
     position: absolute;
+    top: 0;
+    left: 0;           
     width: 300px;
     overflow: hidden;
+    min-height: 100%; 
     background-color: black;
 }
 
@@ -13,7 +15,7 @@
 }
 
 .nav-pills > li{
-    background-color: papayawhip;
+    background-color: darkgrey;
 }
 
 .nav-pills > li > a {
@@ -57,9 +59,14 @@
   font-weight: bold;
 }
 
+.breadcrumb > li.active > a{color: #777;}
+.breadcrumb > li > a:hover{color: black;}
+
 .documentation{
     margin-left: 300px;
     background-color: white;
     color: black;
     min-height: 100%;
 }
+
+.container-doc{padding-left: 15px; padding-right: 15px;}
