@@ -14,7 +14,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <?php Tags::nav_item("Home", BASEURL_LOCALE, $section == "index" ? "active" : NULL);?>
-                <?php Tags::nav_item("Documentación", BASEURL_LOCALE . 'documentation', $section == "documentation" ? "active" : NULL);?>
+                <?php Tags::nav_item("Documentación", BASEURL_LOCALE . 'manual', $section == "documentation" ? "active" : NULL);?>
                 <?php Tags::nav_item("Descargar", BASEURL_LOCALE . 'download', $section == "download" ? "active" : NULL);?>
 		<?php Tags::nav_item("Contribuir", BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
                 <?php Tags::nav_item("Contacto", BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		

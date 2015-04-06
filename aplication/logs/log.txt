@@ -360,4 +360,34 @@ Stack trace:
 ----------\n[2015-03-30 15:19:25.000000 127.0.0.1  - Unknown ] Undefined variable: search
 ----------\n[2015-03-30 15:19:25.000000 127.0.0.1  - Unknown ] Undefined variable: search
 ----------\n[2015-03-30 15:19:25.000000 127.0.0.1  - Unknown ] Undefined variable: search
+----------\n[2015-04-06 18:56:44.000000 127.0.0.1  - Unknown ] include(C:\wamp\www\webenolaphp\aplication/source/view/documentation_home.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory
+----------\n[2015-04-06 18:56:44.000000 127.0.0.1  - Unknown ] include() [<a href='function.include'>function.include</a>]: Failed opening 'C:\wamp\www\webenolaphp\aplication/source/view/documentation_home.php' for inclusion (include_path='.;C:\php\pear')
+----------\n[2015-04-06 19:04:10.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:04:10.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:13:31.000000 127.0.0.1  - Unknown ] Undefined index: documentation
+----------\n[2015-04-06 19:13:31.000000 127.0.0.1  - Unknown ] Invalid argument supplied for foreach()
+----------\n[2015-04-06 19:23:22.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:23:22.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:23:40.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:23:40.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:23:42.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:23:42.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:25:32.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:25:32.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:25:41.000000 127.0.0.1  - Unknown ] Undefined variable: doc
+----------\n[2015-04-06 19:25:41.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 19:59:11.000000 127.0.0.1  - Unknown ] Undefined property: Doc::$title
+----------\n[2015-04-06 19:59:11.000000 127.0.0.1  - Unknown ] Undefined property: Doc::$title
+----------\n[2015-04-06 20:03:45.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:03:45.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:03.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:03.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:07.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:07.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:10.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:10.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:12.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:12.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:49.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 20:04:49.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
 ----------\n

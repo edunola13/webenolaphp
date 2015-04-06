@@ -26,36 +26,40 @@
         </div>
         <div>
             <?php Tags::navigation_menu('pills', TRUE, TRUE);?>
-                <?php Tags::nav_item('Introducción', base_locale() . 'manual/introduction', $docSection['sec'] == "introduction" ? "active" : NULL);?>                
-                <?php if($docSection['sec'] == "introduction") include 'sections/sub_nav_doc.php';?>
-                <?php Tags::nav_item('Tutorial', base_locale() . 'manual/tutorial', $docSection['sec'] == "tutorial" ? "active" : NULL);?>
-                <?php if($docSection['sec'] == "tutorial") include 'sections/sub_nav_doc.php';?>
-                <?php Tags::nav_item('Documentación', base_locale() . 'manual/documentation', $docSection['sec'] == "documentation" ? "active" : NULL);?>
-                <?php if($docSection['sec'] == "documentation") include 'sections/sub_nav_doc.php';?>
+                <?php Tags::nav_item('Introducción', base_locale() . 'manual/introduction');?>                
+                <?php Tags::nav_item('Tutorial', base_locale() . 'manual/tutorial');?>
+                <?php Tags::nav_item('Documentación', base_locale() . 'manual/documentation');?>
             <?php Tags::end_navigation_menu();?>
         </div>
     </div>
     <div class="documentation">
         <?php Tags::breadcrumb(); ?>
             <?php Tags::nav_item("Manual de Usuario", base_locale() . 'manual');?>
-            <?php Tags::nav_item($docSection['title'], base_locale() . 'manual/'.$docSection['sec'], $doc == NULL ? 'active':NULL);?>
-            <?php if($doc != NULL)Tags::nav_item($doc->titulo, base_locale() . 'manual/'.$docSection['sec']. '/' .$doc->nombreUrl, 'active');?>
         <?php Tags::end_breadcrumb(); ?>
         
         <div class="container-doc">
-            <?php if($doc != NULl){?>
-                <h3><?php echo $doc->titulo; ?></h3>
-                <?php echo $doc->contenido; ?>
-            <?php }else{?>
-                <h3><?php echo $docSection['title']?></h3>
-                <ul>
-                    <?php foreach ($navs as $nav) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/tutorial/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
-                    <?php }?>
-                </ul>
-            <?php }?>
-                
-            <?php Tags::paginador_simple('disabled', '', 'Anterior', 'active', '', 'Siguiente'); ?>
+            <h2>Manual de Usuario de Enola PHP</h2>
+            
+            <h4>Introducción</h4>
+            <ul>
+                <?php foreach ($docs['introduccion'] as $doc_intro) {?>
+                    <li><a href="<?php echo base_locale() . 'manual/introduction/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
+                <?php }?>
+            </ul>
+            
+            <h4>Tutorial</h4>
+            <ul>
+                <?php foreach ($docs['tutorial'] as $doc_intro) {?>
+                    <li><a href="<?php echo base_locale() . 'manual/tutorial/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
+                <?php }?>
+            </ul>
+            
+            <h4>Documentación</h4>
+            <ul>
+                <?php foreach ($docs['documentacion'] as $doc_intro) {?>
+                    <li><a href="<?php echo base_locale() . 'manual/documentation/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
+                <?php }?>
+            </ul>
             
             <hr class="divider"></hr>
 
