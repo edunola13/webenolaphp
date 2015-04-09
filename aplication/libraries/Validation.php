@@ -10,7 +10,6 @@ class Validation {
     public $dir_content= '../source/content/messages';
     //Variable con toda la informacion sobre los datos/campos
     private $campos_datos;
-    private $archivo= NULL;
     private $messages;
     private $locale= NULL;
     
@@ -127,13 +126,16 @@ class Validation {
      * Carga el archivo de mensajes en la primer llamada
      */
     private function load_messages(){
-        if($this->archivo == NULL){
-            if($this->locale == NULL){
-                $this->messages= file(realpath(dirname(__FILE__)). '/' . $this->dir_content . '.ini');
-                $this->messages= $this->parse_properties($this->messages);
+        if($this->messages == NULL){
+            echo "hola ";
+            if($this->locale != NULL){
+                if(file_exists(realpath(dirname(__FILE__)). '/' . $this->dir_content . "_$this->locale" . '.txt')){
+                    $this->messages= file(realpath(dirname(__FILE__)). '/' . $this->dir_content . "_$this->locale" . '.txt');
+                    $this->messages= $this->parse_properties($this->messages);
+                }
             }
-            else{
-                $this->messages= file(realpath(dirname(__FILE__)). '/' . $this->dir_content . "_$this->locale" . '.ini');
+            if($this->messages == NULL){
+                $this->messages= file(realpath(dirname(__FILE__)). '/' . $this->dir_content . '.txt');
                 $this->messages= $this->parse_properties($this->messages);
             }
         }

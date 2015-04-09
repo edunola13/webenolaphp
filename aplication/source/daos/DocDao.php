@@ -27,10 +27,11 @@ class DocDao {
         return $cant[0];
     }
     
-    public function docsByCategoria($categoria){
+    public function docsByCategoria($categoria,$locale){
         $this->connection->select("id, titulo, version, locale, nombreUrl, habilitado");
         $this->connection->from('documentacion');
         $this->connection->where("categoria=:categoria", array('categoria' => $categoria));
+        $this->connection->where("locale=:locale", array('locale' => $locale));
         $this->connection->where('habilitado=1', array());
         $this->connection->order('orden asc');
         return $this->connection->getInObjects('Doc');
@@ -41,8 +42,8 @@ class DocDao {
         return $this->connection->firstResultInObject($res, 'Doc');
     }
     
-    public function doc($nombreUrl, $categoria){
-        $res= $this->connection->getFromWhere('documentacion', 'nombreUrl=:nombreUrl and categoria=:categoria', array('nombreUrl' => $nombreUrl, 'categoria' => $categoria));
+    public function doc($nombreUrl, $categoria, $locale){
+        $res= $this->connection->getFromWhere('documentacion', 'nombreUrl=:nombreUrl and categoria=:categoria and locale=:locale', array('nombreUrl' => $nombreUrl, 'categoria' => $categoria, 'locale' => $locale));
         return $this->connection->firstResultInObject($res, 'Doc');
     }
     

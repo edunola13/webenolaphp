@@ -21,24 +21,25 @@
 <body class="body-doc">
     <div class="nav-doc">
         <div class="nav-title">
-            <h2><a href="<?php echo base_locale(); ?>">Enola PHP</a></h2>
-            <br/>
+            <a class="navbar-brand" href="<?php echo real_base();?>">
+                <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
+            </a>
         </div>
         <div>
             <?php Tags::navigation_menu('pills', TRUE, TRUE);?>
-                <?php Tags::nav_item('Introducción', base_locale() . 'manual/introduction', $docSection['sec'] == "introduction" ? "active" : NULL);?>                
+                <?php Tags::nav_item(i18n_value('introduccion-man'), base_locale() . 'manual/introduction', $docSection['sec'] == "introduction" ? "active" : NULL);?>                
                 <?php if($docSection['sec'] == "introduction") include 'sections/sub_nav_doc.php';?>
-                <?php Tags::nav_item('Tutorial', base_locale() . 'manual/tutorial', $docSection['sec'] == "tutorial" ? "active" : NULL);?>
+                <?php Tags::nav_item(i18n_value('tutorial-man'), base_locale() . 'manual/tutorial', $docSection['sec'] == "tutorial" ? "active" : NULL);?>
                 <?php if($docSection['sec'] == "tutorial") include 'sections/sub_nav_doc.php';?>
-                <?php Tags::nav_item('Documentación', base_locale() . 'manual/documentation', $docSection['sec'] == "documentation" ? "active" : NULL);?>
+                <?php Tags::nav_item(i18n_value('documentacion-man'), base_locale() . 'manual/documentation', $docSection['sec'] == "documentation" ? "active" : NULL);?>
                 <?php if($docSection['sec'] == "documentation") include 'sections/sub_nav_doc.php';?>
             <?php Tags::end_navigation_menu();?>
         </div>
     </div>
     <div class="documentation">
         <?php Tags::breadcrumb(); ?>
-            <?php Tags::nav_item("Manual de Usuario", base_locale() . 'manual');?>
-            <?php Tags::nav_item($docSection['title'], base_locale() . 'manual/'.$docSection['sec'], $doc == NULL ? 'active':NULL);?>
+            <?php Tags::nav_item(i18n_value('breadcrumb-man'), base_locale() . 'manual');?>
+            <?php Tags::nav_item(i18n_value($docSection['title']), base_locale() . 'manual/'.$docSection['sec'], $doc == NULL ? 'active':NULL);?>
             <?php if($doc != NULL)Tags::nav_item($doc->titulo, base_locale() . 'manual/'.$docSection['sec']. '/' .$doc->nombreUrl, 'active');?>
         <?php Tags::end_breadcrumb(); ?>
         
@@ -50,12 +51,12 @@
                 <h3><?php echo $docSection['title']?></h3>
                 <ul>
                     <?php foreach ($navs as $nav) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/tutorial/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
+                        <li><a href="<?php echo base_locale() . 'manual/' . $docSection['sec'] . '/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
                     <?php }?>
                 </ul>
             <?php }?>
                 
-            <?php Tags::paginador_simple('disabled', '', 'Anterior', 'active', '', 'Siguiente'); ?>
+            <?php Tags::paginador_simple('disabled', '', i18n_value('anterior-man'), 'active', '', i18n_value('siguiente-man')); ?>
             
             <hr class="divider"></hr>
 
