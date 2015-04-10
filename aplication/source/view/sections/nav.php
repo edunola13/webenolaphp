@@ -13,15 +13,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <?php Tags::nav_item("Home", BASEURL_LOCALE, $section == "index" ? "active" : NULL);?>
-                <?php Tags::nav_item("Documentación", BASEURL_LOCALE . 'manual', $section == "documentation" ? "active" : NULL);?>
-                <?php Tags::nav_item("Descargar", BASEURL_LOCALE . 'download', $section == "download" ? "active" : NULL);?>
-		<?php Tags::nav_item("Contribuir", BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
-                <?php Tags::nav_item("Contacto", BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		
+                <?php Tags::nav_item(i18n_value('nav-home'), BASEURL_LOCALE, $section == "index" ? "active" : NULL);?>
+                <?php Tags::nav_item(i18n_value('nav-documentacion'), BASEURL_LOCALE . 'manual', $section == "documentation" ? "active" : NULL);?>
+                <?php Tags::nav_item(i18n_value('nav-descargar'), BASEURL_LOCALE . 'download', $section == "download" ? "active" : NULL);?>
+		<?php Tags::nav_item(i18n_value('nav-contribuir'), BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
+                <?php Tags::nav_item(i18n_value('nav-contacto'), BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		
             </ul>
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
-                <input type="text" class="form-control" placeholder="Buscar...">
+                <input type="text" class="form-control" placeholder="<?php echo i18n_value('buscar')?>...">
                 </div>
             </form>
 	</div>

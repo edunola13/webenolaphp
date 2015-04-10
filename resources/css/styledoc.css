@@ -12,6 +12,8 @@
 
 .nav-title{
     background-color: black;
+    height: 80px; 
+    padding-left: 100px;
 }
 
 a:hover{
