@@ -390,4 +390,15 @@ Stack trace:
 ----------\n[2015-04-06 20:04:12.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
 ----------\n[2015-04-06 20:04:49.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
 ----------\n[2015-04-06 20:04:49.000000 127.0.0.1  - Unknown ] Trying to get property of non-object
+----------\n[2015-04-06 22:29:52.000000 ::1  - Unknown ] A non well formed numeric value encountered
+----------\n[2015-04-06 22:29:52.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'categoria' in 'where clause'' in C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\xampp\htdocs\webenolaphp\framework\classes\En_DataBase.php(341): En_DataBase->get()
+#1 C:\xampp\htdocs\webenolaphp\aplication\source\daos\DocDao.php(36): En_DataBase->getInObjects('Doc')
+#2 C:\xampp\htdocs\webenolaphp\aplication\source\controllers\Documentation.php(15): DocDao->docsByCategoria('introduccion')
+#3 C:\xampp\htdocs\webenolaphp\framework\modules\http.php(132): Documentation->doGet()
+#4 C:\xampp\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp\htdocs\webenolaphp\index.php(31): require('C:\xampp\htdocs...')
+#6 {main}
+  thrown
 ----------\n
