@@ -48,7 +48,7 @@
                 <h3><?php echo $doc->titulo; ?></h3>
                 <?php echo $doc->contenido; ?>
             <?php }else{?>
-                <h3><?php echo $docSection['title']?></h3>
+                <h3><?php echo i18n_value($docSection['title'])?></h3>
                 <ul>
                     <?php foreach ($navs as $nav) {?>
                         <li><a href="<?php echo base_locale() . 'manual/' . $docSection['sec'] . '/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
