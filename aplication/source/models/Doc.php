@@ -6,7 +6,9 @@ class Doc {
     public $contenido;
     public $version;
     public $locale;
+    public $categoria;
     public $nombreUrl;
+    public $orden;
     public $fechaActualizacion;
     public $habilitado= FALSE;
     

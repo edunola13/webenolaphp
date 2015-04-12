@@ -70,6 +70,7 @@ class AdminDoc extends En_Controller{
             import_librarie("Validation");
             $doc;
             $this->read_fields($doc, 'Doc');
+            $doc->id= NULL;
             if($this->validate($doc)){
                 if($this->dao->addDoc($doc)){
                     $mensaje= "Agregado Correctamente";
@@ -124,7 +125,8 @@ class AdminDoc extends En_Controller{
             'contenido' => 'required',
             'version' => 'required',
             'locale' => 'required',
-            'nombreUrl' => 'required|letters_numbers');
+            'nombreUrl' => 'required|letters_numbers',
+            'orden' => 'required|is_integer');
         if($this->actualAction == "update"){
             $config['id']= 'required';
         }

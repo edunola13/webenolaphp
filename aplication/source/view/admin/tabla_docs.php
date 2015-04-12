@@ -3,6 +3,8 @@
                         <th>Titulo</th>
                         <th>Version</th>
                         <th>Locale</th>
+                        <th>Categoria</th>
+                        <th>Orden</th>
                         <th>Estado</th>
                         <th></th>
                     </tr></thead>
@@ -11,6 +13,8 @@
                             <td><?php echo $doc->titulo; ?></td>
                             <td><?php echo $doc->version; ?></td>
                             <td><?php echo $doc->locale; ?></td>
+                            <td><?php echo $doc->categoria; ?></td>
+                            <td><?php echo $doc->orden; ?></td>
                             <td>
                                 <?php if($doc->habilitado) { ?>
                                 <span title="Habilitado" class="glyphicon glyphicon-ok-circle"></span>

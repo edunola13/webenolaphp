@@ -28,6 +28,14 @@
                     
                     <?php Tags::input("Nombre URL", "nombreUrl", "nombreUrl", "text", "Nombre de la URL", $doc->nombreUrl, (isset($this->errors['nombreUrl']) ? $this->errors['nombreUrl'] : NULL), 'error')?>
                     
+                    <?php Tags::select("Categoria", "categoria", "categoria", $doc->categoria)?>
+                        <?php Tags::select_option("Introducción", "introduction");?>
+                        <?php Tags::select_option("Tutorial", "tutorial");?>
+                        <?php Tags::select_option("Documentación", "documentation");?>
+                    <?php Tags::end_select()?>
+                    
+                    <?php Tags::input("Orden", "orden", "orden", "text", "Orden dentro de la categoria", $doc->orden, (isset($this->errors['orden']) ? $this->errors['orden'] : NULL), 'error')?>
+                    
                     <?php Tags::boolean_checkbox("Habilitado", "habilitado","habilitado", $doc->habilitado); ?>
                     
                     <?php if(isset($this->errors['contenido'])){ 
@@ -40,7 +48,7 @@
                     <br/>
                     
                     <?php Tags::botonera(); ?>
-                        <?php Tags::button('Modificar', '', 'submit');?>
+                        <?php Tags::button('Guardar', '', 'submit');?>
                     <?php Tags::end_botonera(); ?>
                 <?php Tags::end_form(); ?>
             </article>

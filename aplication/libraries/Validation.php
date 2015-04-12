@@ -127,7 +127,6 @@ class Validation {
      */
     private function load_messages(){
         if($this->messages == NULL){
-            echo "hola ";
             if($this->locale != NULL){
                 if(file_exists(realpath(dirname(__FILE__)). '/' . $this->dir_content . "_$this->locale" . '.txt')){
                     $this->messages= file(realpath(dirname(__FILE__)). '/' . $this->dir_content . "_$this->locale" . '.txt');
@@ -416,7 +415,7 @@ class Validation {
      * @return boolean
      */
     private function letters_numbers ($nombre, $dato){
-    	$expresion = '/^[a-zA-Záéíóúñ0-9]*$/';
+    	$expresion = '/^[a-zA-Záéíóúñ0-9\d_d-]*$/';
     	if(preg_match($expresion, $dato)){
             return TRUE;
     	}

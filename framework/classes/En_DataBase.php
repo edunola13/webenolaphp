@@ -606,7 +606,7 @@ class En_DataBase extends Enola{
                 return TRUE;
             }
         } catch (PDOException $e) {
-            throw new PDOException($e->getMessage(), $e->getCode());
+            throw new PDOException($e->getMessage());
         }
     }
     /**
