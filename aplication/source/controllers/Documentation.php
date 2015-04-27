@@ -50,7 +50,7 @@ class Documentation extends En_Controller{
     }
     
     protected function error() {
-        echo "La pagina que solicitaste no existe";
+        error_404();
         exit;
     }
 }
