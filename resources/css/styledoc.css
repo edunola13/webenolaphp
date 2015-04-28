@@ -57,7 +57,7 @@ h2 > a:hover{
 
 .nav-desplegable > li > a{
     position: relative;
-  display: block;
+    display: block;
     color: black;
 }
 
@@ -74,6 +74,11 @@ h2 > a:hover{
 
 .breadcrumb > li.active > a{color: #777;}
 .breadcrumb > li > a:hover{color: black;}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    color: black;
+    background-color: #9d9d9d;
+}
 
 .documentation{
 /*    margin-left: 300px;*/

@@ -1,4 +1,5 @@
 var base= "http://localhost/webenolaphp/";
+//var base= "http://enolaphp.com/";
 
 jQuery(document).on('keydown', 'input.busquedaDoc', function(e) {
 	if(e.which == 13) {buscar_docs();}

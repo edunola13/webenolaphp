@@ -19,6 +19,12 @@
 		<?php Tags::nav_item(i18n_value('nav-contribuir'), BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
                 <?php Tags::nav_item(i18n_value('nav-contacto'), BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		
             </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <?php Tags::nav_item_drop_down('Idioma');?>
+                    <?php Tags::nav_item('English', BASEURL . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
+                    <?php Tags::nav_item('Español', BASEURL . 'es/' . URIAPP, LOCALE == "es" ? "active" : NULL);?>
+                <?php Tags::end_nav_item_drop_down();?>
+            </ul>
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
                 <input type="text" class="form-control" placeholder="<?php echo i18n_value('buscar')?>...">
