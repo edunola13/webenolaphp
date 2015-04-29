@@ -47,6 +47,18 @@ class DocDao {
         return $this->connection->firstResultInObject($res, 'Doc');
     }
     
+    public function previousDoc($actualDoc){
+        $this->connection->from('documentacion');
+        $this->connection->where("orden=:orden and categoria=:categoria and locale=:locale", array('orden' => $actualDoc->orden - 1, 'categoria' => $actualDoc->categoria, 'locale' => $actualDoc->locale));
+        return $this->connection->firstResultInObject($this->connection->get(), 'Doc');
+    }
+    
+    public function nextDoc($actualDoc){
+        $this->connection->from('documentacion');
+        $this->connection->where("orden=:orden and categoria=:categoria and locale=:locale", array('orden' => $actualDoc->orden + 1, 'categoria' => $actualDoc->categoria, 'locale' => $actualDoc->locale));
+        return $this->connection->firstResultInObject($this->connection->get(), 'Doc');
+    }
+    
     public function addDoc($doc){
         $doc->fechaActualizacion= date('Y-m-d');
         return $this->connection->insertObject('documentacion', $doc);

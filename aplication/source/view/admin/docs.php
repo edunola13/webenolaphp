@@ -11,7 +11,8 @@
             <div class="col-md-12">
                 <?php Tags::title("Administracion de Documentacion"); ?>
                 <?php Tags::link("link-pagina", real_base(), "<< Volver al Sitio", TRUE, "primary"); ?>
-                <a title="Agregar" href="<?php echo BASEURL . 'adminDoc/add'; ?>" class="btn btn-primary">Agregar</a>
+                <a title="Agregar" href="<?php echo base() . 'adminDoc/add'; ?>" class="btn btn-primary">Agregar</a>
+                <a title="Cerrar Sesión" href="<?php echo base() . 'logout'; ?>" class="btn btn-primary pull-right">Cerrar Sesión</a>
             </div>
                 
             <div class="col-md-12">

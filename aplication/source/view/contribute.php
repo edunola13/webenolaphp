@@ -8,7 +8,7 @@
 <body>
     <?php include 'sections/nav.php'; ?>
 	
-    <div class="jumbotron jumbotron-small">
+    <div class="jumbotron jumbotron-small jumbotron-small2">
         <div class="container">
             <h2 class="pull-left"><?php echo i18n_value('title-contribuir'); ?></h2>
 	</div>

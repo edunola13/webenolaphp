@@ -12,10 +12,13 @@
         "contribute": {"class": "Index", "url": "contribute"},
         "contact": {"class": "Index", "url": "contact"},
         "documentation": {"class": "Documentation", "url": "manual/*"},
-        "adminDoc": {"class": "admin/AdminDoc", "url": "adminDoc/-"}
+        "adminDoc": {"class": "admin/AdminDoc", "url": "adminDoc/-"},
+        "login": {"class": "Login", "url": "login"},
+        "logout": {"class": "Logout", "url": "logout"}
     },
 
     "filters": {
+        "authorization":{"class":"Authorization", "filtered": "/*"}
     },
             
     "filters_after_processing": {

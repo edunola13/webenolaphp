@@ -22,7 +22,7 @@
     <div class="row">
         <div class="nav-doc col-md-3">
             <div class="nav-title" style="height: 80px; padding-left: 100px;">
-                <a class="navbar-brand" href="<?php echo real_base();?>">
+                <a class="navbar-brand" href="<?php echo base_locale();?>">
                     <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
                 </a>
             </div>

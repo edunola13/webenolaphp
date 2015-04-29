@@ -22,7 +22,7 @@
     <div class="row">
         <div class="nav-doc col-md-3">
             <div class="nav-title">
-                <a class="navbar-brand" href="<?php echo real_base();?>">
+                <a class="navbar-brand" href="<?php echo base_locale()?>">
                     <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
                 </a>
             </div>
@@ -61,7 +61,7 @@
                     </ul>
                 <?php }?>
 
-                <?php Tags::paginador_simple('disabled', '', i18n_value('anterior-man'), 'active', '', i18n_value('siguiente-man')); ?>
+                <?php Tags::paginador_simple($previousDoc != NULL ? 'active':'disabled', $previousDoc != NULL ? $previousDoc->nombreUrl:'', i18n_value('anterior-man'), $nextDoc != NULL ? 'active':'disabled', $nextDoc != NULL ? $nextDoc->nombreUrl:'', i18n_value('siguiente-man')); ?>
 
                 <hr class="divider"></hr>
 

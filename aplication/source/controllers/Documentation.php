@@ -39,13 +39,17 @@ class Documentation extends En_Controller{
             
             $doc= null;
             $actualDoc= 0;
+            $previousDoc= NULL;
+            $nextDoc= NULL;
             if(isset($this->uri_params[1])){
                 $doc= $this->dao->doc($this->uri_params[1],$seccion['sec'],LOCALE);
-                if($doc == NULL)$this->error ();
+                if($doc == NULL)$this->error();
                 $actualDoc= $doc->id;
+                $previousDoc= $this->dao->previousDoc($doc);
+                $nextDoc= $this->dao->nextDoc($doc);
             }
             
-            $this->load_view('documentation', array('section' => 'documentation', 'docSection' => $seccion, 'navs' => $navs, 'doc' => $doc, 'actualDoc' => $actualDoc));
+            $this->load_view('documentation', array('section' => 'documentation', 'docSection' => $seccion, 'navs' => $navs, 'doc' => $doc, 'actualDoc' => $actualDoc, 'previousDoc' => $previousDoc, 'nextDoc' => $nextDoc));
         }   
     }
     

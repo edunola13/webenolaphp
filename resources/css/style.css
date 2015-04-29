@@ -45,6 +45,8 @@ hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 
 .jumbotron{background-color: #ff8600;}
 
+.jumbotron-small2{padding-bottom: 15px;}
+
 .form-control{background-color: #ff8600;color: black;}
 
 .form-control::-webkit-input-placeholder { color: black;}

@@ -4,6 +4,15 @@
             "front": "/*"
         },
         "deny": {
+            "admin": "adminDoc*"
+        },
+        "error": "login"
+    },
+    "administrator": {
+        "permit": {
+            "front": "/*"
+        },
+        "deny": {
         },
         "error": "login"
     }
