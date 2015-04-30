@@ -37,7 +37,7 @@
         <div class="col-md-9 documentation">
             <?php Tags::breadcrumb(); ?>
                 <?php Tags::nav_item(i18n_value('breadcrumb-man'), base_locale() . 'manual');?>
-                <?php Tags::nav_item_drop_down('Idioma', TRUE);?>
+                <?php Tags::nav_item_drop_down('Languaje', TRUE);?>
                     <?php Tags::nav_item('English', BASEURL . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
                     <?php Tags::nav_item('Español', BASEURL . 'es/' . URIAPP, LOCALE == "es" ? "active" : NULL);?>
                 <?php Tags::end_nav_item_drop_down();?>

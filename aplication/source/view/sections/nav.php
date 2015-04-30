@@ -20,7 +20,7 @@
                 <?php Tags::nav_item(i18n_value('nav-contacto'), BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <?php Tags::nav_item_drop_down('Idioma');?>
+                <?php Tags::nav_item_drop_down('Languaje');?>
                     <?php Tags::nav_item('English', BASEURL . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
                     <?php Tags::nav_item('Español', BASEURL . 'es/' . URIAPP, LOCALE == "es" ? "active" : NULL);?>
                 <?php Tags::end_nav_item_drop_down();?>
