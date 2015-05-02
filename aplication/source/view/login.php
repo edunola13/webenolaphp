@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <?php include 'sections/head.php'; ?>
-    <title>Café Ossira</title>
+    <title>ENOLA - Framework PHP</title>
 </head>
 <body>
     <div class="container">
