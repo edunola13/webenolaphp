@@ -8,20 +8,24 @@ class DocDao {
         $this->connection= new En_DataBase();
     }
     
-    public function docs($search = "", $limit = 0, $offset = 0){
+    public function docs($search = "", $limit = 0, $offset = 0, $version= "", $locale= "", $categoria=""){
         $this->connection->from('documentacion');
         $this->connection->where_like("titulo", $search);
-        $this->connection->or_where_like("version", $search);
+        $this->connection->where("(''=:version or version=:version)", array('version' => $version));
+        $this->connection->where("(''=:locale or locale=:locale)", array('locale' => $locale));
+        $this->connection->where("(''=:categoria or categoria=:categoria)", array('categoria' => $categoria));
         $this->connection->order('titulo asc');
         $this->connection->limit($limit, $offset);
         return $this->connection->getInObjects('Doc');
     }
     
-    public function cantDocs($search = ""){
+    public function cantDocs($search = "", $version= "", $locale= "", $categoria=""){
         $this->connection->select("count(*)");
         $this->connection->from("documentacion");
         $this->connection->where_like("titulo", $search);
-        $this->connection->or_where_like("version", $search);
+        $this->connection->where("(''=:version or version=:version)", array('version' => $version));
+        $this->connection->where("(''=:locale or locale=:locale)", array('locale' => $locale));
+        $this->connection->where("(''=:categoria or categoria=:categoria)", array('categoria' => $categoria));
         $res= $this->connection->get();
         $cant= $res->fetch();
         return $cant[0];
