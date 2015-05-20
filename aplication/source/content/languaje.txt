@@ -1,68 +1,75 @@
 nav-home=Home
-nav-documentacion=Documentation
-nav-descargar=Download
-nav-contribuir=Contribute
-nav-contacto=Contact
-buscar=Find
-//home
-sub-title=Easy, Light, Fast.
-que-es=What is
-que-es-des1=EnolaPHP is PHP Framework for the development of web applications. It´s light, very easy to install and easy to learn and configure. It's divided in modules that help to reutilize code and makes the developing process and the frameworks evolution faster. 
-que-es-des2=EnolaPHP offers lots of features that will help you improve your productivity in web application development
-por-que=Why
-por-que-des1=// It's very light and very fast.
-por-que-des2=// Fast and simple configuration.
-por-que-des3=// Dynamic routing module.
-por-que-des4=// Usefull and versatile filter module.
-por-que-des5=// Component module for modularizing repeated behaviour.
-por-que-des6=// Easy integration with other frameworks and PHP Libraries.
-por-que-des7=// DB Connection - Simple DAO/ActiveRecord.
+nav-documentacion=Documentación
+nav-descargar=Descargar
+nav-contribuir=Contribuir
+nav-contacto=Contacto
+buscar=Buscar
+#home
+index-descrip=EnolaPHP es un Framework PHP para el desarrollo de aplicaciones web el cual es muy liviano, simple de instalar y configurar, muy rápido y fácil de aprender
+sub-title=Simple, Liviano, Rapido.
+que-es=Qué es
+que-es-des1=EnolaPHP es un Framework PHP principalmente para el desarrollo de aplicaciones web el cual es muy liviano, simple de instalar y configurar, muy rápido y fácil de aprender. El mismo se encuentra separado en módulos los cuales promueven la reutilización de código y aceleran el proceso de desarrollo y evolución del framework.
+que-es-des2=EnolaPHP provee varias características que le ayudarán a mejorar su productividad en el desarrollo de aplicaciones web.
+por-que=Por qué?
+por-que-des1=// Es muy liviano y muy rápido.
+por-que-des2=// Configuración rápida y sencilla.
+por-que-des3=// Módulo de ruteo dinámico.
+por-que-des4=// Módulo de filtros útil y versátil.
+por-que-des5=// Módulo de componentes para modularizar comportmaiento repetido.
+por-que-des6=// Fácil integración con distintos frameworks o librerías PHP.
+por-que-des7=// Conexión a la BD - Simple DAO/ActiveRecord.
 por-que-des8=// Tags - UI Services
-por-que-nacio=Why was it born?
-por-que-nacio-des1=To have a Framework in PHP that can provide us with an architecture that helps us programming web applications with features similar to the ones provided by J2EE and to have the oportunity  to put over this architecture all the libraries, frameworks and dependencies that we need.
-por-que-nacio-des2=The features provided by J2EE that are provided by EnolaPHP are: simple configuration files, controllers and filters that map HTTP requests, easy library inclusion, etc.
-introduccion=Introduction
-introduccion-des=A fast look over the framework and it's components. How does it work?
+por-que-nacio=Por qué nació?
+por-que-nacio-des1=Para contar en PHP con un framework que nos provea de una arquitectura que nos ayude a programar aplicaciones web con características similares a las que provee J2EE y sobre esta arquitectura poder agregar todas las librerías, frameworks o dependencias que el programador necesite.
+por-que-nacio-des2=Las características que provee J2EE que se proveen en EnolaPHP son: simples archivos de configuración, controladores y filtros que mapean solicitudes HTTP, simple inclusión de librerías, etc.
+introduccion=Introducción
+introduccion-des=Una mirada rápida al framework y sus componentes. Cómo funciona Enola PHP.
 tutorial=Tutorial
-tutorial-des= Easy and fast. Do the Framework Enola PHP Tutorial here.
+tutorial-des=Fácil y rápido. Realiza el tutorial del Framework Enola PHP aquí.
 docs=Docs
-docs-des=A deeper look over the framework. How does internally work?
-descargar=Download
-//download
-title-descargar=Download Enola PHP
-descargar-des=Download the version that better adjusts to your needs. Enola PHP v1.0 is the last version.
-git-hub1=Enola PHP is developed using GitHub as it's collaborative development platform where the proyect's code repository can be found. 
-git-hub2=With <a href="https://github.com/edunola13/enolaphp/releases">GitHub</a> you can download differents versions and the last version that's being developed.
-source-force=When a version's development has been finished the source code is uploades to  <a href="http://sourceforge.net/projects/enolaphp01/">SourceForce</a> from where you can also download previous versions.
-//contribuir
-title-contribuir=Collaborate with Enola PHP
-contribuir-des=We need your help to improve Enola PHP, it doesn't matter if you are not an expert.
-corre-la-voz=Spread the Word
-corre-la-voz-des= If you found this proyect interesting, and if it helped you build better applications, your opinion is very important to us, spread it, post it in your blog, share it with your facebook friends, etc.
-documentemos=Let's document
-documentemos-des= For a proyect to grow, a good documentation is needed. Enola PHP has it's own documentation but it can be improved. You can add your own documentation on <a href="https://github.com/edunola13/enolaphp/wiki">GitHub</a> or on your own blog or website.
-diseñemos= Let's design
-diseñemos-des=The project's code, website and documentation is in it's first versions, so if you have any suggestions on it's design don't hesitate and contact us.
-testers=Testers - Bug reporting
-testers-des1=Enola PHP it's a proyect in it's first stages and has a few people working on it for the moment, that's why we need your help to find y solve problems.
-testers-des2=If you find a bug you can report it to <ahref="https://github.com/edunola13/enolaphp/issues">GitHub</a>. If you are not sure that is a bug, you can consult us and we will answer as soon as possible. With GitHub you will also be able to help us fix any bug that's been reported.
+docs-des=Una mirada mas profunda al framework. Cómo funciona internamente Enola PHP?
+descargar=Descargar
+#download
+download-descrip=Descargar Enola PHP que mas se ajuste a sus necesidades. Version actual v1.0
+title-descargar=Descarga Enola PHP
+descargar-des=Descargue la versión que más se ajuste a sus necesidades. La versión actual de Enola PHP es v1.0
+git-hub1=Enola PHP se desarrolla usando GitHub como su plataforma de desarrollo colaborativa. En esta se encuentra todo el repositorio de codigo del proyecto.
+git-hub2=Mediante <a href="https://github.com/edunola13/enolaphp/releases">GitHub</a> usted podrá descargar las distintas versiones que se fueron creando asi como también descargar la versión actual que se esta desarrollando.
+source-force=Cuando una versión de Enola PHP se ha terminado de desarrollorar el código fuente es subido a <a href="http://sourceforge.net/projects/enolaphp01/">SourceForce</a> donde también desde aquí se pueden descargar las distintas versiones del framework.
+#contribuir
+title-contribuir=Contribuye con Enola PHP
+contribute-descrip=Ayudar a Enola PHP a ser mejor.
+contribuir-des=Para que Enola PHP mejore necesitamos de su ayuda, sin importar si usted es o no un experto
+corre-la-voz=Corre la Voz
+corre-la-voz-des=Si te pareció interesante el proyecto y te ayudó a crear mejores aplicaciones, tu opinión es muy importante para nosotros. Difúndelo. Crea una entrada en tu blog, compártelo con tus amigos por facebook, etc.
+documentemos=Documentemos
+documentemos-des=Para que un proyecto crezca se necesita buena documentación. Enola PHP cuenta con su propia documentacion pero todavía esta puede mejorar. Puede agregar documentacion en <a href="https://github.com/edunola13/enolaphp/wiki">GitHub</a> o en su propio blog o página web.
+diseñemos=Diseñemos
+diseñemos-des=El proyecto se encuentra en sus primeras versiones tanto de código, de sitio web, documentación, etc. Si usted tiene consejos de diseño o similares no dude en contactarse con nosotros.
+testers=Testers - Reporte de Errores
+testers-des1=Enola PHP es un proyecto que recién comienza y cuenta con la participacion de pocas personas por el momento, por lo tanto necesitamos de su ayuda para encontrar y solucionar problemas.
+testers-des2=Si usted encuentra un Bug puede reportarlo en <a href="https://github.com/edunola13/enolaphp/issues">GitHub</a>. Si no esta seguro de que sea un Bug puede consultarnos por privado y le responderemos lo antes posible. Mediante GitHub usted tambien puede ayudarnos a resolver los distintos Bugs que se vayan reportando.
 programmers=Programmers - Architects
-programmers-des1=If you are programming lover or a software designing enthusiast you can help us improve the framework architecture and also give your view on how it's been implemented so we can take it into account for a next version and keep on improving.
-programmers-des2=If you come up with a new functionality that you would like our framework to have, don't hesitate and share it with us.<br/>Whether it is about improving the architecture, or the code or because you want a new functionality inform us using <a href="https://github.com/edunola13/enolaphp/pulls">GitHub</a>
-//contacto
-title-contacto=Contact Enola PHP's Team
-contacto-des=If you have any kind of doubt or comment, whether it's a commercial consultation or of personal interest, please complete the following form so we can contact you.<br/><br/>Thank you.
+programmers-des1=Si usted es un amante de la programacion y del diseño de desarrollo de software puede ayudarnos a mejorar la arquitectura del framework como asi tambien opinar sobre como se encuentra implementado para en una próxima version tenerlo en cuenta y mejorar.
+programmers-des2=Si se le ocurre alguna nueva funcionalidad que le gustaría que proveyera el framework no dude y comunícanoslo.<br/>Ya sea para mejorar la arquitectura y la codificación del framework como porque desea una nueva funcionalidad comunícanoslo mediante <a href="https://github.com/edunola13/enolaphp/pulls">GitHub</a>
+#contacto
+contact-descrip=Contacta al Equipo de Enola PHP
+title-contacto=Contacta al Equipo de Enola PHP
+contacto-des=Sí tiene cualquier tipo de consulta, ya se comercial, de interés personal u otra, por favor complete el siguiente formulario para contactarnos con usted y así poder aclarar sus dudas.<br/><br/>Saludos y Gracias.
 legend-contacto=Contact Us
-form-nombre=Name
+form-nombre=Nombre
 form-email=Email
-form-asunto=Subject
-form-mensaje=Message
-form-enviar=Send
-//documentacion
-title-manual=Enola Php's User Guide
-breadcrumb-man=User Guide
-introduccion-man=Introduction
+form-asunto=Asunto
+form-mensaje=Mensaje
+form-enviar=Enviar
+#documentacion
+documentation-descrip=Documentacion del framework Enola PHP.
+title-manual=Manual de Usuario de Enola PHP
+breadcrumb-man=Manual de Usuario
+introduction-man=Introducción
 tutorial-man=Tutorial
-documentacion-man=Documentation
-anterior-man=Previous
-siguiente-man=Next
+database-man=Base de Datos
+libraries-man=Librerias
+documentation-man=Documentación
+anterior-man=Anterior
+siguiente-man=Siguiente
