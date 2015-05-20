@@ -3,10 +3,10 @@
 <head>
     <?php include 'sections/head.php'; ?>
     <title>ENOLA - Framework PHP</title>
+    <meta name="description" content="<?php echo i18n_value("index-descrip")?>">
 </head>
 <body>
     <?php include 'sections/nav.php'; ?>
-	
     <div class="jumbotron">
         <div class="container">
             <img src="<?php echo base();?>resources/images/logo-negro.png" class="img-responsive animated bounce" alt="Logo-negro" style="margin-left:auto;margin-right:auto;">

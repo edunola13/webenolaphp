@@ -8,7 +8,7 @@
 		<span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="<?php echo real_base();?>">
-                <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
+                <img alt="Enola PHP" src="<?php echo base();?>resources/images/logo-color.png">
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -21,8 +21,8 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <?php Tags::nav_item_drop_down('Languaje');?>
-                    <?php Tags::nav_item('English', BASEURL . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
-                    <?php Tags::nav_item('Español', BASEURL . 'es/' . URIAPP, LOCALE == "es" ? "active" : NULL);?>
+                    <?php Tags::nav_item('English', BASEURL . 'en/' . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
+                    <?php Tags::nav_item('Español', BASEURL . URIAPP, LOCALE == "es" ? "active" : NULL);?>
                 <?php Tags::end_nav_item_drop_down();?>
             </ul>
             <form class="navbar-form navbar-right" role="search">

@@ -25,8 +25,8 @@
     },
             
     "i18n": {
-        "default": "en",
-        "locales": "es"
+        "default": "es",
+        "locales": "en"
     },
        
     "url-components": "enola-components",

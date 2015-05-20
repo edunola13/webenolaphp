@@ -3,6 +3,7 @@
 <head>
     <?php include 'sections/head.php'; ?>
     <title>ENOLA - Framework PHP - Contact</title>
+    <meta name="description" content="<?php echo i18n_value("contact-descrip")?>">
 </head>
 
 <body>

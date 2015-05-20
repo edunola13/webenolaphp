@@ -3,6 +3,7 @@
 <head>
     <?php include 'sections/head.php'; ?>
     <title>ENOLA - Framework PHP - Contribute</title>
+    <meta name="description" content="<?php echo i18n_value("contribute-descrip")?>">
 </head>
 
 <body>

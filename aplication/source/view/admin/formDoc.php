@@ -3,6 +3,7 @@
 <head>
     <?php require_once 'sections/head.php'; ?>
     <script src="<?php echo BASEURL . 'resources/ckeditor/ckeditor.js'; ?>"></script>
+    <title>ENOLA - Framework PHP</title>
 </head>
 <body>    
     <div class="container">
@@ -31,6 +32,8 @@
                     <?php Tags::select("Categoria", "categoria", "categoria", $doc->categoria)?>
                         <?php Tags::select_option("Introducción", "introduction");?>
                         <?php Tags::select_option("Tutorial", "tutorial");?>
+                        <?php Tags::select_option("Base de Datos", "database");?>
+                        <?php Tags::select_option("Librerias", "libraries");?>
                         <?php Tags::select_option("Documentación", "documentation");?>
                     <?php Tags::end_select()?>
                     

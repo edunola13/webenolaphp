@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <?php require_once 'sections/head.php'; ?>
+    <title>ENOLA - Framework PHP</title>
 </head>
 <body>    
     <div class="container">

@@ -3,6 +3,7 @@
 <head>
     <?php include 'sections/head.php'; ?>
     <title>ENOLA - Framework PHP - Download</title>
+    <meta name="description" content="<?php echo i18n_value("download-descrip")?>">
 </head>
 
 <body>

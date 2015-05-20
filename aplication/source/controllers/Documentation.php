@@ -14,42 +14,27 @@ class Documentation extends En_Controller{
             $docs= array();
             $docs['introduction']= $this->dao->docsByCategoria('introduction',LOCALE);
             $docs['tutorial']= $this->dao->docsByCategoria('tutorial',LOCALE);
-            $docs['documentacion']= $this->dao->docsByCategoria('documentacion',LOCALE);
+            $docs['database']= $this->dao->docsByCategoria('database',LOCALE);
+            $docs['libraries']= $this->dao->docsByCategoria('libraries',LOCALE);
+            $docs['documentation']= $this->dao->docsByCategoria('documentation',LOCALE);
             $this->load_view('documentation_home', array('section' => 'documentation', 'docs' => $docs));
         }else{
-            $seccion= array();
-            switch ($this->uri_params[0]){
-                case "introduction":
-                    $seccion['sec']= 'introduction';
-                    $seccion['title']= 'introduccion-man';
-                    break;
-                case "tutorial":
-                    $seccion['sec']= 'tutorial';
-                    $seccion['title']= 'tutorial-man';
-                    break;
-                case "documentation":
-                    $seccion['sec']= 'documentation';
-                    $seccion['title']= 'documentacion-man';
-                    break;
-                default:
-                    $this->error();
-                    break;
-            }
-            $navs= $this->dao->docsByCategoria($seccion['sec'],LOCALE);
+            $categoria= $this->uri_params[0];
+            $navs= $this->dao->docsByCategoria($categoria,LOCALE);
             
             $doc= null;
             $actualDoc= 0;
             $previousDoc= NULL;
             $nextDoc= NULL;
             if(isset($this->uri_params[1])){
-                $doc= $this->dao->doc($this->uri_params[1],$seccion['sec'],LOCALE);
+                $doc= $this->dao->doc($this->uri_params[1],$categoria,LOCALE);
                 if($doc == NULL)$this->error();
                 $actualDoc= $doc->id;
                 $previousDoc= $this->dao->previousDoc($doc);
                 $nextDoc= $this->dao->nextDoc($doc);
             }
             
-            $this->load_view('documentation', array('section' => 'documentation', 'docSection' => $seccion, 'navs' => $navs, 'doc' => $doc, 'actualDoc' => $actualDoc, 'previousDoc' => $previousDoc, 'nextDoc' => $nextDoc));
+            $this->load_view('documentation', array('section' => 'documentation', 'docSection' => $categoria, 'navs' => $navs, 'doc' => $doc, 'actualDoc' => $actualDoc, 'previousDoc' => $previousDoc, 'nextDoc' => $nextDoc));
         }   
     }
     

@@ -16,6 +16,7 @@
 
     <?php i18n('languaje', LOCALE_URI); ?>
     <title>ENOLA - Framework PHP - Documentation</title>
+    <meta name="description" content="<?php echo i18n_value("documentation-descrip")?>">
 </head>
 
 <body class="container body-doc">
@@ -23,14 +24,16 @@
         <div class="nav-doc col-md-3">
             <div class="nav-title" style="height: 80px; padding-left: 100px;">
                 <a class="navbar-brand" href="<?php echo base_locale();?>">
-                    <img alt="Logo-color" src="<?php echo base();?>resources/images/logo-color.png">
+                    <img alt="Enola PHP" src="<?php echo base();?>resources/images/logo-color.png">
                 </a>
             </div>
             <div>
                 <?php Tags::navigation_menu('pills', TRUE, TRUE);?>
-                    <?php Tags::nav_item(i18n_value('introduccion-man'), base_locale() . 'manual/introduction');?>                
+                    <?php Tags::nav_item(i18n_value('introduction-man'), base_locale() . 'manual/introduction');?>                
                     <?php Tags::nav_item(i18n_value('tutorial-man'), base_locale() . 'manual/tutorial');?>
-                    <?php Tags::nav_item(i18n_value('documentacion-man'), base_locale() . 'manual/documentation');?>
+                    <?php Tags::nav_item(i18n_value('database-man'), base_locale() . 'manual/database');?>
+                    <?php Tags::nav_item(i18n_value('libraries-man'), base_locale() . 'manual/libraries');?>
+                    <?php Tags::nav_item(i18n_value('documentation-man'), base_locale() . 'manual/documentation');?>
                 <?php Tags::end_navigation_menu();?>
             </div>
         </div>
@@ -38,34 +41,22 @@
             <?php Tags::breadcrumb(); ?>
                 <?php Tags::nav_item(i18n_value('breadcrumb-man'), base_locale() . 'manual');?>
                 <?php Tags::nav_item_drop_down('Languaje', TRUE);?>
-                    <?php Tags::nav_item('English', BASEURL . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
-                    <?php Tags::nav_item('Español', BASEURL . 'es/' . URIAPP, LOCALE == "es" ? "active" : NULL);?>
+                    <?php Tags::nav_item('English', BASEURL . 'en/' . URIAPP, LOCALE == 'en' ? "active" : NULL);?>		
+                    <?php Tags::nav_item('Español', BASEURL . URIAPP, LOCALE == "es" ? "active" : NULL);?>
                 <?php Tags::end_nav_item_drop_down();?>
             <?php Tags::end_breadcrumb(); ?>
 
             <div class="container-doc">
                 <h2><?php echo i18n_value('title-manual'); ?></h2>
-
-                <h4><?php echo i18n_value('introduccion-man'); ?></h4>
-                <ul>
-                    <?php foreach ($docs['introduction'] as $doc_intro) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/introduction/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
+                
+                <?php foreach ($docs as $key => $docs_sub) { ?>
+                    <h4><?php echo i18n_value($key . '-man'); ?></h4>
+                    <ul>
+                    <?php foreach ($docs_sub as $doc_intro) {?>
+                        <li><a href="<?php echo base_locale() . 'manual/' . $key . '/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
                     <?php }?>
-                </ul>
-
-                <h4><?php echo i18n_value('tutorial-man'); ?></h4>
-                <ul>
-                    <?php foreach ($docs['tutorial'] as $doc_intro) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/tutorial/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
-                    <?php }?>
-                </ul>
-
-                <h4><?php echo i18n_value('documentacion-man'); ?></h4>
-                <ul>
-                    <?php foreach ($docs['documentacion'] as $doc_intro) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/documentation/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
-                    <?php }?>
-                </ul>
+                </ul>                    
+                <?php }?>
 
                 <hr class="divider"></hr>
 
