@@ -1,28 +1,44 @@
 var base= "http://localhost/webenolaphp/";
 //var base= "http://enolaphp.com/";
 
-jQuery(document).on('keydown', 'input.busquedaDoc', function(e) {
-	if(e.which == 13) {buscar_docs();}
-});
+var pagina= 0;
 
-function buscar_docs(){
-    var search= $("#busquedaDoc").val();
-    window.location= base + "adminDoc/page/1/" + search;
+function actualizarPagina(pag){
+    pagina= pag;
 }
 
-function actualizar_docs(page, search){
+function limpiarBuscador(){
+    $("#busquedaDoc").val("");
+    filtrarDocs();
+}
+
+jQuery(document).on('keydown', 'input.busquedaDoc', function(e) {
+	if(e.which == 13) {filtrarDocs();}
+});
+
+function filtrarDocs(pag){
+    var search= $("#busquedaDoc").val();
+    var ver= $("#select-version").val();
+    var loc= $("#select-locale").val();
+    var cat= $("#select-categoria").val();
+    if(pag != null){
+        pagina= pag;
+    }    
+    
+    document.body.style.cursor = 'wait';
+    
     $.ajax( {
-	    url: base + "adminDoc/actualizar/" + page + "/" + search,
-	    type: 'GET',
-	    success: function (rta) {
-	    	document.body.style.cursor = 'auto';
-	    	$("#tabla_docs").html(rta);
-	    },
-	    error: function (){
-	    	document.body.style.cursor = 'auto';
-	        alert("Error");
-	    }
-	} );
+        url: "adminDoc/page/"+pagina+"/"+search+"/"+ver+"/"+loc+"/"+cat,
+        type: 'GET',
+        success: function (rta) {
+            $( "#tabla_docs" ).html(rta);
+            document.body.style.cursor = 'auto';
+        },
+	error: function (){
+            document.body.style.cursor = 'auto';
+            alert("Error");
+	}
+    });
 }
 
 function delete_doc(id, page, search){
@@ -32,7 +48,7 @@ function delete_doc(id, page, search){
 	    type: 'GET',
 	    success: function (rta) {
 	    	document.body.style.cursor = 'auto';                
-	    	actualizar_docs(page, search);
+	    	filtrarDocs();
                 $("#mensaje-alert").html(rta);
 	    },
 	    error: function (){

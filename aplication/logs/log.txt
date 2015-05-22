@@ -178,4 +178,24 @@
 ----------\n[2015-05-20 19:33:19.000000 127.0.0.1  - Unknown ] Function ereg_replace() is deprecated
 ----------\n[2015-05-20 19:33:19.000000 127.0.0.1  - Unknown ] Function ereg_replace() is deprecated
 ----------\n[2015-05-20 19:33:19.000000 127.0.0.1  - Unknown ] Function ereg_replace() is deprecated
+----------\n[2015-05-22 14:20:33.000000 127.0.0.1  - Unknown ] Undefined index: select_message
+----------\n[2015-05-22 14:21:31.000000 127.0.0.1  - Unknown ] Undefined index: select_message
+----------\n[2015-05-22 14:31:51.000000 127.0.0.1  - Unknown ] Undefined variable: categoria
+----------\n[2015-05-22 14:31:51.000000 127.0.0.1  - Unknown ] Undefined variable: optionsCategoria
+----------\n[2015-05-22 14:31:51.000000 127.0.0.1  - Unknown ] Invalid argument supplied for foreach()
+----------\n[2015-05-22 14:35:09.000000 127.0.0.1  - Unknown ] Invalid argument supplied for foreach()
+----------\n[2015-05-22 14:56:11.000000 127.0.0.1  - The HTTP method 0 is not supported ] general_error
+----------\n[2015-05-22 14:56:51.000000 127.0.0.1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-10' at line 1' in C:\wamp\www\webenolaphp\framework\classes\En_DataBase.php:330
+Stack trace:
+#0 C:\wamp\www\webenolaphp\framework\classes\En_DataBase.php(341): En_DataBase->get()
+#1 C:\wamp\www\webenolaphp\aplication\source\daos\DocDao.php(19): En_DataBase->getInObjects('Doc')
+#2 C:\wamp\www\webenolaphp\aplication\source\controllers\admin\AdminDoc.php(49): DocDao->docs('', 10, -10, '1.0', 'es', '')
+#3 C:\wamp\www\webenolaphp\framework\modules\http.php(125): AdminDoc->page()
+#4 C:\wamp\www\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\wamp\www\webenolaphp\index.php(31): require('C:\wamp\www\web...')
+#6 {main}
+  thrown
+----------\n[2015-05-22 15:03:36.000000 127.0.0.1  - Unknown ] Undefined offset: 4
+----------\n[2015-05-22 15:15:21.000000 127.0.0.1  - Unknown ] Undefined property: Paginator::$number_of_pages
+----------\n[2015-05-22 15:21:03.000000 127.0.0.1  - Error Fatal - Parse - Strict ] syntax error, unexpected ';'
 ----------\n

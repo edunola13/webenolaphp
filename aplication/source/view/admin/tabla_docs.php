@@ -23,22 +23,29 @@
                                 <?php } ?>
                             </td>
                             <td>
-                                <button type="button" class="btn btn-primary btn-md" title="Delete" onclick="delete_doc('<?php echo $doc->id; ?>', '<?php echo $paginador->current_page; ?>', '<?php $search ?>')">
+                                <button type="button" class="btn btn-primary btn-md" title="Eliminar" onclick="delete_doc('<?php echo $doc->id; ?>', '<?php echo $paginador->current_page; ?>', '<?php $search ?>')">
                                 <span class="glyphicon glyphicon-remove"></span></button>
-                                <a title="Update" href="<?php echo BASEURL . "adminDoc/update/" . $doc->id; ?>" class="btn btn-primary">
+                                <a title="Update" href="<?php echo BASEURL . "adminDoc/update/" . $doc->id; ?>" class="btn btn-primary" title="Modificar">
                                 <span class="glyphicon glyphicon-edit"></span></a>
+                                <a title="Update" href="<?php echo BASEURL . "adminDoc/add/" . $doc->id; ?>" class="btn btn-primary" title="Duplicar">
+                                <span class="glyphicon glyphicon-copy"></span></a>
                             </td>
                         </tr>
                     <?php } ?>                
                 <?php Tags::end_table(); ?>            
                 <?php Tags::paginator();?>
-                    <?php Tags::page_first(BASEURL . 'adminDoc/page/1/' . $search); ?>
+                    <?php Tags::page_first('javascript:filtrarDocs(1)'); ?>
                     <?php for ($i = 1; $i < $paginador->current_page; $i++) { ?>
-                    <?php Tags::page($i, BASEURL . 'adminDoc/page/' . $i .'/'.$search); ?>
+                        <?php Tags::page($i, 'javascript:filtrarDocs('.$i.')'); ?>
                     <?php } ?>
-                    <?php Tags::page($paginador->current_page, BASEURL . 'adminDoc/page/' . $paginador->current_page . '/'.$search, 'active'); ?>
+                    <?php Tags::page($paginador->current_page, 'javascript:filtrarDocs('.$paginador->current_page.')', 'active'); ?>
                     <?php for ($i = $paginador->current_page + 1; $i <= $paginador->number_of_pages(); $i++) { ?>
-                    <?php Tags::page($i, BASEURL . 'adminDoc/page/' . $i .'/'.$search); ?>
+                        <?php Tags::page($i, 'javascript:filtrarDocs('.$i.')'); ?>
                     <?php } ?>
-                    <?php Tags::page_last(BASEURL . 'adminDoc/page/' . $paginador->number_of_pages() .'/'.$search); ?>
+                    <?php Tags::page_last('javascript:filtrarDocs('.$paginador->number_of_pages().')'); ?>
                 <?php Tags::end_paginator(); ?>
+                <script>
+                    document.onreadystatechange = function () {
+                        actualizarPagina(<?php echo $paginador->current_page?>);
+                    };
+                </script>

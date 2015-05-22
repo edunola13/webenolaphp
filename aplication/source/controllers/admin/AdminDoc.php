@@ -13,12 +13,21 @@ class AdminDoc extends En_Controller{
     
     public function index(){
         import_librarie('Paginator');
-        
-        $search= "";
-        $cantidad= $this->dao->cantDocs($search);
+        //Datos Filtro
+        $search= "";        
+        $version='1.0';
+        $optionsVersion=array('1.0','2.0');
+        $locale='es';
+        $optionsLocale=array(array('Español','es'),array('Ingles','en'));
+        $categoria='introduction';
+        $optionsCategoria=array(array('Introducción','introduction'),array('Tutorial','tutorial'),array('Base de Datos','database'),array('Librerias','libraries'),array('Documentación','documentation'));
+        //Consulta
+        $cantidad= $this->dao->cantDocs($search,$version,$locale,$categoria);
         $paginador= new Paginator($this->cantPorPagina, $cantidad, 1);        
-        $docs= $this->dao->docs($search, $this->cantPorPagina, 0);
-        $this->load_view('admin/docs', array('section' => 'documentation', 'docs' => $docs, 'paginador' => $paginador, 'search' => $search));
+        $docs= $this->dao->docs($search, $this->cantPorPagina, 0,$version,$locale,$categoria);
+        
+        $this->load_view('admin/docs', array('section' => 'documentation', 'docs' => $docs, 'paginador' => $paginador, 'search' => $search,
+            'version' => $version, 'optionsVersion' => $optionsVersion, 'categoria' => $categoria, 'optionsCategoria' => $optionsCategoria,'locale'=>$locale, 'optionsLocale' => $optionsLocale));
     }
     
     public function page(){
@@ -28,16 +37,21 @@ class AdminDoc extends En_Controller{
         if(isset($this->uri_params[0]))$pagina= $this->uri_params[0];        
         $search= "";
         if(isset($this->uri_params[1]))$search= $this->uri_params[1];
+        $version= "";
+        if(isset($this->uri_params[2]))$version= $this->uri_params[2];
+        $locale= "";
+        if(isset($this->uri_params[3]))$locale= $this->uri_params[3];
+        $categoria= "";
+        if(isset($this->uri_params[4]))$categoria= $this->uri_params[4];
         
-        $cantidad= $this->dao->cantDocs($search);
+        $cantidad= $this->dao->cantDocs($search,$version,$locale,$categoria);
         $paginador= new Paginator($this->cantPorPagina, $cantidad, $pagina);
-        if($paginador->number_of_pages() >= $pagina && $pagina > 0){
-            $docs= $this->dao->docs($search, $this->cantPorPagina, $paginador->element_start_position());
-            $this->load_view('admin/docs', array('section' => 'documentation', 'docs' => $docs, 'paginador' => $paginador, 'search' => $search));
+        if($pagina > $paginador->number_of_pages()){
+            $paginador->current_page=1;
         }
-        else{
-            redirect('adminDoc');
-        }
+        $docs= $this->dao->docs($search, $this->cantPorPagina, $paginador->element_start_position(),$version,$locale,$categoria);
+        
+        $this->load_view('admin/tabla_docs', array('section' => 'documentation', 'docs' => $docs, 'paginador' => $paginador, 'search' => $search));
     }
     
     public function actualizar(){
@@ -61,10 +75,16 @@ class AdminDoc extends En_Controller{
     }
     
     public function add(){
+        $idDuplicate= NULL;
+        if(isset($this->uri_params[0]))$idDuplicate= $this->uri_params[0]; 
+        
         $mensaje= NULL;
         $tipoMensaje= "danger";
         if($this->request->request_method == "GET"){
             $doc= new Doc();
+            if($idDuplicate != NULL){
+                $doc= $this->dao->docId($idDuplicate);
+            }
             $this->load_view('admin/formDoc', array('doc' => $doc, 'mensaje' => $mensaje, 'tipoMensaje' => $tipoMensaje));
         }else{   
             import_librarie("Validation");
