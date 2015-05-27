@@ -23,7 +23,7 @@
     <div class="row">
         <div class="nav-doc col-md-3">
             <div class="nav-title">
-                <a class="navbar-brand" href="<?php echo base_locale()?>">
+                <a class="col-xs-12 navbar-brand" href="<?php echo base_locale()?>">
                     <img alt="Enola PHP" src="<?php echo base();?>resources/images/logo-color.png">
                 </a>
             </div>

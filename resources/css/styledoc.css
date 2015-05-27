@@ -1,5 +1,5 @@
-.body-doc {background-color: black; height: 100%; width: 100%}
-
+.body-doc {background-color: #585858; height: 100%; width: 100%}
+/*Color de Fondo mas negro #424242*/
 .nav-doc{
 /*    position: absolute;
     top: 0;
@@ -7,19 +7,26 @@
     width: 300px;
     overflow: hidden;*/
     height: 100%; 
-    background-color: black;
+    background-color: #585858;
     padding: 0px;
     margin-bottom: 0px;
 }
 
 .nav-title{
-    background-color: black;
-    height: 80px; 
-    padding-left: 100px;
+    background-color: #585858;
+    height: 80px;
+}
+
+.nav-title a{
+    margin:0px;
+}
+
+.nav-title a img{
+    margin:0px auto;
 }
 
 a:hover{
-    color: black;
+    color: white;
 }
 
 h2 > a:hover{
@@ -40,8 +47,8 @@ h2 > a:hover{
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: #202020;
   font-weight: bold;
 }
 
@@ -82,11 +89,20 @@ h2 > a:hover{
 
 .documentation{
 /*    margin-left: 300px;*/
-    background-color: white;
-    color: black;
+    background-color: #202020;
+    color: white;
     min-height: 100vh;
     margin-bottom: 0px;
     padding: 0px;
 }
 
 .container-doc{padding-left: 15px; padding-right: 15px;}
+
+.pager li.active > a:hover{
+    background-color: gray;
+    border: 2px solid;
+}
+
+.footer > p{
+    color: silver;
+}

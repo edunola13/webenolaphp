@@ -25,21 +25,13 @@
             </div>
             <div class="col-md-9">
                 <?php Tags::form('form-contact', 'POST', ''); ?>
-                    <?php Tags::alert_message("danger", $mensaje);?>            
+                    <?php Tags::alert_message($tipoError, $mensaje);?>            
                 
                     <?php Tags::input(i18n_value('form-nombre'), 'nombre',"nombre", "text", i18n_value('form-nombre'), $email['nombre'], (isset($this->errors['nombre']) ? $this->errors['nombre'] : NULL), 'error');?> 
 
                     <?php Tags::input(i18n_value('form-email'), 'email',"email", "email", i18n_value('form-email'), $email['email'], (isset($this->errors['email']) ? $this->errors['email'] : NULL), 'error');?> 
 
-                    <?php if(isset($this->errores['asunto'])){
-                        Tags::alert_message("warning", $this->errores["asunto"]); }?>
-
-                    <?php Tags::select(i18n_value('form-asunto'), "asunto","asunto", $email['asunto'], NULL,FALSE,(isset($this->errors['asunto']) ? $this->errors['asunto'] : NULL),'error'); ?>
-                        <?php Tags::select_option("General", "General"); ?>
-                        <?php Tags::select_option("Enola PHP", "Enola PHP"); ?>
-                        <?php Tags::select_option("UI Services", "UI Services"); ?>
-                        <?php Tags::select_option("Games", "Games"); ?>
-                    <?php Tags::end_select(); ?>
+                    <?php Tags::input(i18n_value('form-asunto'), 'asunto',"asunto", "text", i18n_value('form-asunto'), $email['asunto'], (isset($this->errors['asunto']) ? $this->errors['asunto'] : NULL), 'error');?> 
 
                     <?php Tags::textarea(i18n_value('form-mensaje'), "mensaje","mensaje", 10, i18n_value('form-mensaje'), $email['mensaje'],(isset($this->errors['mensaje']) ? $this->errors['mensaje'] : NULL),'error');?>
 
