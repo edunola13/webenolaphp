@@ -53,7 +53,7 @@
                     <h4><?php echo i18n_value($key . '-man'); ?></h4>
                     <ul>
                     <?php foreach ($docs_sub as $doc_intro) {?>
-                        <li><a href="<?php echo base_locale() . 'manual/' . $key . '/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
+                        <li><span class="glyphicon glyphicon-console" aria-hidden="true"></span> <a href="<?php echo base_locale() . 'manual/' . $key . '/' .$doc_intro->nombreUrl ?>"><?php echo $doc_intro->titulo ?></a></li>
                     <?php }?>
                 </ul>                    
                 <?php }?>

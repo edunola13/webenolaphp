@@ -61,7 +61,7 @@
                     <h3><?php echo i18n_value($docSection . '-man')?></h3>
                     <ul>
                         <?php foreach ($navs as $nav) {?>
-                            <li><a href="<?php echo base_locale() . 'manual/' . $docSection . '/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
+                            <li><span class="glyphicon glyphicon-console" aria-hidden="true"></span> <a href="<?php echo base_locale() . 'manual/' . $docSection . '/' .$nav->nombreUrl ?>"><?php echo $nav->titulo ?></a></li>
                         <?php }?>
                     </ul>
                 <?php }?>
