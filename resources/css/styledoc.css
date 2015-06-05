@@ -66,6 +66,7 @@ h2 > a:hover{
     position: relative;
     display: block;
     color: black;
+    margin-bottom: 1px;
 }
 
 .nav-pills > .nav-desplegable > li.active{
