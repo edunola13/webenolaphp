@@ -93,7 +93,7 @@ class En_Controller extends Enola implements Controller{
      */
     protected function validate($var){
         $validacion= new Validation(LOCALE_URI);        
-        $reglas= $this->config_validation();
+        $reglas= $this->configValidation();
         if(is_object($var)){
             foreach ($reglas as $key => $regla) {
                 $validacion->add_rule($key, $var->$key, $regla);
@@ -116,7 +116,7 @@ class En_Controller extends Enola implements Controller{
     /**
      * Funcion que arma una configuracion para la validacion
      */
-    protected function config_validation(){
+    protected function configValidation(){
         return array();
     }
     /**
