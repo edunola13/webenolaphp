@@ -13,7 +13,7 @@
             <h1>ENOLA - Framework PHP</h1>
             <h1><small><?php echo i18n_value('sub-title'); ?></small></h1>
             <br>
-            <a href="" data-toggle="tooltip" data-placement="top" title="<?php echo i18n_value('descargar'); ?> v1.0">
+            <a href="https://github.com/edunola13/enolaphp/releases/tag/v1.0" data-toggle="tooltip" data-placement="top" title="<?php echo i18n_value('descargar'); ?> v1.0">
                 <img class="img-circle" src="<?php echo base();?>resources/images/download.png" alt="Download" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
             </a>
 	</div>
@@ -51,22 +51,22 @@
 	<hr class="divider"></hr>
 	<div class="row">
             <div class="col-md-4 col-centered animated fadeInRight wow">
-                <a href="http://www.edunola.com.ar/enolaphp/doc/version/0.1/Introducci%C3%B3n"  target="blank">
-		<img class="img-circle" src="<?php echo real_base();?>resources/images/list.png" alt="Introducción" style="width: 140px; height: 140px;">
+                <a href="<?php echo base_locale() . "manual/introduction"?>"  target="blank">
+		<img class="img-circle" src="<?php echo base();?>resources/images/list.png" alt="Introducción" style="width: 140px; height: 140px;">
 		</a>
 		<h2><?php echo i18n_value('introduccion'); ?></h2>
 		<p><?php echo i18n_value('introduccion-des'); ?></p>
             </div><!-- /.col-md-4 -->
             <div class="col-md-4 col-centered animated fadeInRight wow">
-		<a href="http://www.edunola.com.ar/enolaphp/doc/version/0.1/Tutorial" target="blank">
-		<img class="img-circle" src="<?php echo real_base();?>resources/images/tick.png" alt="Tutorial" style="width: 140px; height: 140px;">
+		<a href="<?php echo base_locale() . "manual/tutorial"?>" target="blank">
+		<img class="img-circle" src="<?php echo base();?>resources/images/tick.png" alt="Tutorial" style="width: 140px; height: 140px;">
                 </a>
 		<h2><?php echo i18n_value('tutorial'); ?></h2>
 		<p><?php echo i18n_value('tutorial-des'); ?></p>
             </div><!-- /.col-md-4 -->
             <div class="col-md-4 col-centered animated fadeInRight wow">
-		<a href="http://www.edunola.com.ar/enolaphp/doc/version/0.1/Documentaci%C3%B3n" target="blank">
-		<img class="img-circle" src="<?php echo real_base();?>resources/images/docs.png" alt="Introducción" style="width: 140px; height: 140px;">
+		<a href="<?php echo base_locale() . "manual/documentation"?>" target="blank">
+		<img class="img-circle" src="<?php echo base();?>resources/images/docs.png" alt="Introducción" style="width: 140px; height: 140px;">
                 </a>
 		<h2><?php echo i18n_value('docs'); ?></h2>
 		<p><?php echo i18n_value('docs-des'); ?></p>
@@ -76,8 +76,8 @@
 	
     <div class="jumbotron jumbotron-small">
         <div class="container">
-            <a href="" data-toggle="tooltip" data-placement="top" title="<?php echo i18n_value('descargar'); ?> v1.0">
-            <img class="img-circle" src="<?php echo real_base();?>resources/images/download.png" alt="Introducción" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
+            <a href="https://github.com/edunola13/enolaphp/releases/tag/v1.0" data-toggle="tooltip" data-placement="top" title="<?php echo i18n_value('descargar'); ?> v1.0">
+            <img class="img-circle" src="<?php echo base();?>resources/images/download.png" alt="Introducción" style="width:60px;height:60px;display:block;margin-left:auto;margin-right:auto;">
             </a>
 	</div>
     </div>

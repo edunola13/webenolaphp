@@ -108,6 +108,10 @@ h2 > a:hover{
     list-style-type: none;
 }
 
+.container-doc .doc-content li{
+    list-style-type: disc;
+}
+
 .footer > p{
     color: silver;
 }

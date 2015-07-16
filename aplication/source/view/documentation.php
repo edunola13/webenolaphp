@@ -56,7 +56,7 @@
             <div class="container-doc">
                 <?php if($doc != NULl){?>
                     <h3><?php echo $doc->titulo; ?></h3>
-                    <?php echo $doc->contenido; ?>
+                    <div class="doc-content"><?php echo $doc->contenido; ?></div>
                 <?php }else{?>
                     <h3><?php echo i18n_value($docSection . '-man')?></h3>
                     <ul>

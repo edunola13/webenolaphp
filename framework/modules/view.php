@@ -10,7 +10,7 @@
         return BASEURL;
     }
     /**
-     * Retorna la baseurl
+     * Retorna la baseurl + indexpage
      * @return string
      */
     function real_base(){
