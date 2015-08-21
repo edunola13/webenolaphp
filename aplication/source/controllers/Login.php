@@ -25,7 +25,7 @@ class Login extends En_Controller{
                 $this->load_view("login", array('user' => $user, 'mensaje' => NULL));
             }            
             else{
-                if($user['user'] != "administrator" || $user['password'] != "anaEdu1112"){
+                if($user['user'] != "administrator" || $user['password'] != "pass"){
                     //Armo un mensaje de respuesta
                     $mensaje= 'El usuario o contraseña son invalidos';
                     //Lo mando al formulario con el mensaje
