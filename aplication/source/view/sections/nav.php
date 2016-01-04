@@ -16,7 +16,7 @@
                 <?php Tags::nav_item(i18n_value('nav-home'), BASEURL_LOCALE, $section == "index" ? "active" : NULL);?>
                 <?php Tags::nav_item(i18n_value('nav-documentacion'), BASEURL_LOCALE . 'manual', $section == "documentation" ? "active" : NULL);?>
                 <?php Tags::nav_item(i18n_value('nav-descargar'), BASEURL_LOCALE . 'download', $section == "download" ? "active" : NULL);?>
-		<?php Tags::nav_item(i18n_value('nav-contribuir'), BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
+				<?php Tags::nav_item(i18n_value('nav-contribuir'), BASEURL_LOCALE . 'contribute', $section == "contribute" ? "active" : NULL);?>
                 <?php Tags::nav_item(i18n_value('nav-contacto'), BASEURL_LOCALE . 'contact', $section == "contact" ? "active" : NULL);?>		
             </ul>
             <ul class="nav navbar-nav navbar-right">

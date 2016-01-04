@@ -1,12 +1,21 @@
 body{
-    background-color: #202020
+    background-color: white;
+	color: black;
 }
 
 hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 
+a:hover{
+	color:black;
+}
+
+.form-control {
+    background-color: silver !important;
+}
+
 .navbar-default {
-  background-color: #202020;
-  border-color: #202020;
+  background-color: white;
+  border-color: white;
 }
 
 .navbar-fixed-top .navbar-collapse,
@@ -26,28 +35,28 @@ hr{ border-top: 1px solid #ff8600;margin-bottom: 50px;margin-top: 25px;}
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #fff;
+  color: black;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
-    color:white;
-    background-color: #202020;
+    color:black;
+    background-color: white;
 }
 
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
-    color: white;
-    background-color: #202020 !important;
+    color: black;
+    background-color: silver;
 }
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  color: white;
-  background-color: #202020;
+	color: black;
+	background-color: white;
 }
 
 .jumbotron{background-color: #ff8600;}
 
 .jumbotron-small2{padding-bottom: 15px;}
 
-.form-control{background-color: #ff8600;color: black;}
+.form-control{background-color: #ff8600;color: black;border: 1px solid white;}
 
 .form-control::-webkit-input-placeholder { color: black;}
 
