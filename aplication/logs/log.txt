@@ -1,2 +1,12 @@
 [2015-11-10 15:43:16.000000 ::1  - Unknown ] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set()
+----------\n[2016-03-06 21:06:48.000000 ::1  - Error Fatal - Parse - Strict ] Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'ana'@'localhost' to database 'webenolaphp'' in C:\xampp-php5.6\htdocs\webenolaphp\framework\classes\En_DataBase.php:72
+Stack trace:
+#0 C:\xampp-php5.6\htdocs\webenolaphp\framework\classes\En_DataBase.php(30): En_DataBase->getConexion(NULL)
+#1 C:\xampp-php5.6\htdocs\webenolaphp\aplication\source\daos\DocDao.php(8): En_DataBase->__construct()
+#2 C:\xampp-php5.6\htdocs\webenolaphp\aplication\source\controllers\Documentation.php(9): DocDao->__construct()
+#3 C:\xampp-php5.6\htdocs\webenolaphp\framework\modules\http.php(104): Documentation->__construct()
+#4 C:\xampp-php5.6\htdocs\webenolaphp\framework\core.php(195): execute_controller(Array)
+#5 C:\xampp-php5.6\htdocs\webenolaphp\index.php(31): require('C:\\xampp-php5.6...')
+#6 {main}
+  thrown
 ----------\n
