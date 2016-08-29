@@ -40,18 +40,33 @@ class Index extends En_Controller{
             $tipoError= 'danger';
             if($this->validate($email)){
                 //Los campos son correctos, armo el mail
-                $correo= "info@enolaphp.com";
+                $correo= "edunola13@hotmail.com";
                 $asunto = $email['asunto'];
-                $cuerpo = "Nombre: ". $email['nombre']. "\n" . "Email:". $email['email']. "\n \n" . $email['mensaje'];
+                $cuerpo = "Nombre: ". $email['nombre']. "<br/>" . "Email:". $email['email']. "<br/><br/>" . $email['mensaje'];
 
-                //Modifico el header para poner como from y reply to al mail del consultante
-                $headers = 'From: '.  $email['email']."\r\n".
-                'Reply-To: '.  $email['email']."\r\n" .
-                'X-Mailer: PHP/' . phpversion();
-                $resultado = mail($correo, $asunto, $cuerpo, $headers);
+                import_librarie('PHPMailer/class.phpmailer');            
+            
+                $mail = new PHPMailer();
+                $mail->IsSMTP();  // telling the class to use SMTP  	
+                //$mail->SMTPDebug = 2;
 
-                //Ve si se pudo o no enviar el mail y en base a eso arma una respuesta
-                if ($resultado) {
+                $mail->Host     = "smtp.live.com";
+                $mail->SMTPAuth      = true;
+                $mail->SMTPSecure    = 'tls';
+                $mail->Port          = 587;
+                $mail->Username      = "edunola13@hotmail.com"; // SMTP account username
+                $mail->Password      = "Anabella89$";
+
+                $mail->SetFrom($correo, 'ENOLAPHP - '.$asunto);
+
+                $mail->AddAddress($correo);
+				
+                $mail->Subject  = utf8_decode('ENOLAPHP - '.$asunto);
+                $mail->AltBody = 'Use un visor compatible con HTML';
+                $mail->MsgHTML(utf8_decode($cuerpo));		
+                $mail->WordWrap = 50;
+                set_time_limit(200);
+                if($mail->Send()) {
                     $tipoError= 'success';
                     $mensaje= "El correo fue enviado correctamente.";
                     $email= NULL;
